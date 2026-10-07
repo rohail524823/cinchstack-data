@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below and link to https://cinchstack.com/data/."
+type: dataset
+title: "CinchStack software pricing dataset"
+abstract: "Plan prices and team-size cost estimates for {{tools}} small-business software tools, each with the date it was read from the vendor's own pricing page and the page it came from."
+authors:
+  - name: "CinchStack"
+    website: "https://cinchstack.com/"
+license: CC-BY-4.0
+url: "https://cinchstack.com/data/"
+repository: "https://github.com/rohail524823/cinchstack-data"
+version: "{{lastCheckedIso}}"
+date-released: "{{lastCheckedIso}}"
+keywords:
+  - pricing
+  - software
+  - saas
+  - small business
+  - crm

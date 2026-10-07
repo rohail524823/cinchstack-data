@@ -1,0 +1,67 @@
+tool_id,tool,size,scenario,plan_id,billing,monthly_usd,confidence,checked_on
+activecampaign,ActiveCampaign,solo,"Solo operator, 1,000 contacts",starter-1000,annual,15,high,2026-09-27
+activecampaign,ActiveCampaign,small,"Small team, 10,000 contacts",starter-10000,annual,149,high,2026-09-27
+activecampaign,ActiveCampaign,growing,"Growing team, 50,000 contacts",plus-50000,annual,609,medium,2026-09-27
+ahrefs,Ahrefs,solo,"Solo: 1 user, 1–3 projects, ~500 tracked keywords",lite,monthly,129,high,2026-09-26
+ahrefs,Ahrefs,small,"Small team: 2 users, ~5 projects, ~1,500 tracked keywords",standard,monthly,309,high,2026-09-26
+ahrefs,Ahrefs,growing,"Growing team: 4 users, ~15 projects, ~5,000 tracked keywords",advanced,monthly,689,high,2026-09-26
+clickfunnels,ClickFunnels,solo,"Solo funnel builder, $3,000/month in sales",launch,monthly,97,high,2026-09-27
+clickfunnels,ClickFunnels,small,"Small team, $30,000/month in sales, 3 staff accounts",scale,monthly,197,high,2026-09-27
+clickfunnels,ClickFunnels,growing,"Growing team, $150,000/month in sales, 8 staff accounts",optimize,monthly,297,high,2026-09-27
+clickup,ClickUp,solo,Solo: 1 seat,unlimited,monthly,10,high,2026-09-26
+clickup,ClickUp,small,Small team: 5 seats,unlimited,monthly,50,high,2026-09-26
+clickup,ClickUp,growing,Growing team: 15 seats,business,monthly,285,high,2026-09-26
+framer,Framer,solo,"Solo: 1 site, 1 editor, ~20-page blog/CMS, ~10k visits/mo",basic,monthly,15,high,2026-09-26
+framer,Framer,small,"Small team: 1 site, 3 editors, ~200 CMS items, ~50k visits/mo",pro,monthly,105,medium,2026-09-26
+framer,Framer,growing,"Growing team: 1 site, 8 editors, ~1,000 CMS items, ~250k visits/mo",pro,monthly,255,medium,2026-09-26
+gohighlevel,GoHighLevel,solo,"Solo operator, 1,000 contacts, 200 texts a month",starter,monthly,103.51,medium,2026-09-26
+gohighlevel,GoHighLevel,small,"Small team, 3 users, 5,000 contacts, 1,000 texts a month",starter,monthly,125.42,medium,2026-09-26
+gohighlevel,GoHighLevel,growing,"Growing team, 8 users, 25,000 contacts, 5,000 texts a month",starter,monthly,228.2,medium,2026-09-26
+hubspot,HubSpot,solo,"Solo operator, 1,000 contacts, on Marketing Hub Starter (SMS not included)",starter,monthly,20,high,2026-09-26
+hubspot,HubSpot,small,"Small team, 5,000 contacts with SMS, on Marketing Hub Professional",professional,annual,1100,medium,2026-09-26
+hubspot,HubSpot,growing,"Growing team, 25,000 contacts with SMS, on Marketing Hub Professional",professional,annual,2262.5,medium,2026-09-26
+kajabi,Kajabi,solo,"Solo course creator, $3,000/month in sales",basic,monthly,179,high,2026-09-26
+kajabi,Kajabi,small,"Small team, $30,000/month in sales, 3 staff accounts",growth,monthly,249,high,2026-09-26
+kajabi,Kajabi,growing,"Growing team, $150,000/month in sales, 8 staff accounts",pro,monthly,499,medium,2026-09-26
+kit,Kit,solo,"Solo creator, 1,000 subscribers",creator,monthly,39,high,2026-09-27
+kit,Kit,small,"Small team, 10,000 subscribers",creator-pro,monthly,79,low,2026-09-27
+kit,Kit,growing,"Growing team, 50,000 subscribers",creator-pro,monthly,79,low,2026-09-27
+klaviyo,Klaviyo,solo,"Solo operator, 1,000 active profiles",email-1000,monthly,30,high,2026-10-06
+klaviyo,Klaviyo,small,"Small team, 10,000 active profiles",email-10000,monthly,150,high,2026-10-06
+klaviyo,Klaviyo,growing,"Growing team, 50,000 active profiles",email-60000,monthly,860,high,2026-10-06
+mailchimp,Mailchimp,solo,"Solo operator, 1,000 contacts",essentials,monthly,26.5,high,2026-09-27
+mailchimp,Mailchimp,small,"Small team, 10,000 contacts",standard,monthly,135,high,2026-09-27
+mailchimp,Mailchimp,growing,"Growing team, 50,000 contacts",premium,monthly,815,high,2026-09-27
+notion,Notion,solo,Solo: 1 seat,free,monthly,0,high,2026-09-27
+notion,Notion,small,Small team: 5 seats,plus,monthly,60,high,2026-09-27
+notion,Notion,growing,Growing team: 15 seats,plus,monthly,180,high,2026-09-27
+pipedrive,Pipedrive,solo,"Solo rep, 1 seat, 1,000 contacts, light email marketing",lite,monthly,40,high,2026-09-26
+pipedrive,Pipedrive,small,"3-person sales team, Growth plan, 5,000 contacts, email marketing",growth,monthly,189,medium,2026-09-26
+pipedrive,Pipedrive,growing,"8-person sales team, Premium plan, 25,000 contacts, email marketing",premium,monthly,794,medium,2026-09-26
+se-ranking,SE Ranking,solo,"Solo: 1 user, 1–3 projects, ~500 tracked keywords",core,monthly,129,high,2026-09-26
+se-ranking,SE Ranking,small,"Small team: 2 users, ~5 projects, ~1,500 tracked keywords",core,monthly,149,high,2026-09-26
+se-ranking,SE Ranking,growing,"Growing team: 4 users, ~15 projects, ~5,000 tracked keywords",growth,monthly,299,high,2026-09-26
+semrush,Semrush,solo,"Solo: 1 user, up to 3 sites, ~500 tracked keywords",seo,monthly,139.95,high,2026-09-26
+semrush,Semrush,small,"Small team: 2 users, ~5 sites, ~1,500 tracked keywords",pro-plus,monthly,379,high,2026-09-26
+semrush,Semrush,growing,"Growing team: 4 users, ~15 sites, ~5,000 tracked keywords",advanced,monthly,849,high,2026-09-26
+shopify,Shopify,solo,"Solo store owner, $3,000/mo in sales",basic,monthly,39,high,2026-09-26
+shopify,Shopify,small,"Small team, $30,000/mo in sales, 3 staff accounts",grow,monthly,105,high,2026-09-26
+shopify,Shopify,growing,"Growing store, $150,000/mo in sales, 8 staff accounts",advanced,monthly,399,high,2026-09-26
+squarespace,Squarespace,solo,"Solo: 1 site, 1 editor, ~20-page blog/CMS, ~10k visits/mo",basic,monthly,25,high,2026-09-26
+squarespace,Squarespace,small,"Small team: 1 site, 3 editors, ~200 CMS items, ~50k visits/mo",core,monthly,39,high,2026-09-26
+squarespace,Squarespace,growing,"Growing team: 1 site, 8 editors, ~1,000 CMS items, ~250k visits/mo",core,monthly,39,high,2026-09-26
+systeme-io,Systeme.io,solo,"Solo seller, $3,000/month in sales",startup,monthly,17,high,2026-09-26
+systeme-io,Systeme.io,small,"Small team, $30,000/month in sales, 3 staff accounts",webinar,monthly,47,medium,2026-09-26
+systeme-io,Systeme.io,growing,"Growing team, $150,000/month in sales, 8 staff accounts",unlimited,monthly,97,high,2026-09-26
+webflow,Webflow,solo,"Solo: 1 site, 1 editor, ~20-page blog, ~10k visits/mo",premium,monthly,39,medium,2026-09-26
+webflow,Webflow,small,"Small team: 1 site, 3 editors, ~200 CMS items, ~50k visits/mo",premium,monthly,167,medium,2026-09-26
+webflow,Webflow,growing,"Growing team: 1 site, 8 editors, ~1,000 CMS items, ~250k visits/mo",premium,monthly,732,medium,2026-09-26
+wix,Wix,solo,"Solo: 1 site, 1 editor, ~20-page blog/CMS, ~10k visits/mo",light,annual,17,high,2026-09-27
+wix,Wix,small,"Small team: 1 site, 3 editors, ~200 CMS items, ~50k visits/mo",core,annual,29,high,2026-09-27
+wix,Wix,growing,"Growing team: 1 site, 8 editors, ~1,000 CMS items, ~250k visits/mo",business,annual,39,high,2026-09-27
+woocommerce,WooCommerce,solo,"Solo seller, $3,000/month in sales",woocommerce,monthly,25,medium,2026-09-26
+woocommerce,WooCommerce,small,"Small team, $30,000/month in sales, 3 staff accounts",woocommerce,monthly,45,medium,2026-09-26
+woocommerce,WooCommerce,growing,"Growing team, $150,000/month in sales, 8 staff accounts",woocommerce,monthly,155,medium,2026-09-26
+zoho-crm,Zoho CRM,solo,"Solo operator, 1 seat, on Standard",standard,monthly,20,high,2026-09-27
+zoho-crm,Zoho CRM,small,"3-person team, 3 seats, on Enterprise (forced by mass-email volume)",enterprise,monthly,150,medium,2026-09-27
+zoho-crm,Zoho CRM,growing,"8-person team, 8 seats, on Ultimate (mass-email volume exceeds every edition's cap)",ultimate,monthly,520,low,2026-09-27

@@ -1,0 +1,112 @@
+tool_id,tool,vendor,layer,plan_id,plan,monthly_usd,annual_monthly_usd,price_unit,seats_included,checked_on,source_url
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,starter-1000,"Starter (1,000 contacts)",,15,per-month,1,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,starter-10000,"Starter (10,000 contacts)",,149,per-month,1,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,plus-1000,"Plus (1,000 contacts)",,49,per-month,1,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,plus-10000,"Plus (10,000 contacts)",,189,per-month,1,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,plus-50000,"Plus (50,000 contacts)",,609,per-month,1,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,pro-1000,"Pro (1,000 contacts)",,79,per-month,3,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,pro-10000,"Pro (10,000 contacts)",,375,per-month,3,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,pro-50000,"Pro (50,000 contacts)",,969,per-month,3,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,enterprise-1000,"Enterprise (1,000 contacts)",,145,per-month,5,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,enterprise-10000,"Enterprise (10,000 contacts)",,589,per-month,5,2026-09-27,https://www.activecampaign.com/pricing
+activecampaign,ActiveCampaign,"ActiveCampaign, LLC",grow,enterprise-50000,"Enterprise (50,000 contacts)",,1169,per-month,5,2026-09-27,https://www.activecampaign.com/pricing
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,free,Ahrefs Free,0,,per-month,,2026-09-26,https://ahrefs.com/free
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,starter,Starter,29,,per-month,1,2026-09-26,https://ahrefs.com/pricing
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,lite,Lite,129,107.5,per-month,1,2026-09-26,https://ahrefs.com/pricing
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,standard,Standard,249,207.5,per-month,1,2026-09-26,https://ahrefs.com/pricing
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,advanced,Advanced,449,374.17,per-month,1,2026-09-26,https://ahrefs.com/pricing
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,enterprise,Enterprise,1499,1249.17,per-month,3,2026-09-26,https://ahrefs.com/pricing
+clickfunnels,ClickFunnels,Etison LLC,sell,launch,Launch,97,81,per-month,2,2026-09-27,https://www.clickfunnels.com/pricing
+clickfunnels,ClickFunnels,Etison LLC,sell,scale,Scale,197,164,per-month,5,2026-09-27,https://www.clickfunnels.com/pricing
+clickfunnels,ClickFunnels,Etison LLC,sell,optimize,Optimize,297,248,per-month,10,2026-09-27,https://www.clickfunnels.com/pricing
+clickfunnels,ClickFunnels,Etison LLC,sell,dominate,Dominate,,499.75,per-month,20,2026-09-27,https://www.clickfunnels.com/pricing
+clickup,ClickUp,ClickUp,organize,free-forever,Free Forever,0,0,per-seat-month,,2026-09-26,https://clickup.com/pricing
+clickup,ClickUp,ClickUp,organize,unlimited,Unlimited,10,7,per-seat-month,,2026-09-26,https://clickup.com/pricing
+clickup,ClickUp,ClickUp,organize,business,Business,19,12,per-seat-month,,2026-09-26,https://clickup.com/pricing
+clickup,ClickUp,ClickUp,organize,enterprise,Enterprise,,,custom,,2026-09-26,https://clickup.com/pricing
+framer,Framer,Framer B.V.,site,free,Free,0,0,per-site-month,3,2026-09-26,https://www.framer.com/pricing
+framer,Framer,Framer B.V.,site,basic,Basic,15,10,per-site-month,1,2026-09-26,https://www.framer.com/pricing
+framer,Framer,Framer B.V.,site,pro,Pro,45,30,per-site-month,1,2026-09-26,https://www.framer.com/pricing
+framer,Framer,Framer B.V.,site,enterprise,Enterprise,,,custom,,2026-09-26,https://www.framer.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,starter,Starter,97,80.83,per-month,,2026-09-26,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,unlimited,Unlimited,297,247.5,per-month,,2026-09-26,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,agency-pro,Agency Pro,497,414.17,per-month,,2026-09-26,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,enterprise,Enterprise,,,custom,,2026-09-26,https://www.gohighlevel.com/pricing
+hubspot,HubSpot,"HubSpot, Inc.",run,free,Free tools,0,0,per-month,2,2026-09-26,https://legal.hubspot.com/hubspot-product-and-services-catalog
+hubspot,HubSpot,"HubSpot, Inc.",run,starter,Marketing Hub Starter,20,20,per-seat-month,,2026-09-26,https://legal.hubspot.com/hubspot-product-and-services-catalog
+hubspot,HubSpot,"HubSpot, Inc.",run,professional,Marketing Hub Professional,890,800,per-month,3,2026-09-26,https://www.hubspot.com/pricing/bundle?products=marketing-hub-professional_1&term=annual
+hubspot,HubSpot,"HubSpot, Inc.",run,enterprise,Marketing Hub Enterprise,,3600,per-month,5,2026-09-26,https://www.hubspot.com/pricing/bundle?products=marketing-hub-enterprise_1&term=annual
+kajabi,Kajabi,Kajabi LLC,sell,kickstarter,Kickstarter,,71,per-month,2,2026-09-26,https://app.kajabi.com/signup/v3_kajabi_kickstarter_annual
+kajabi,Kajabi,Kajabi LLC,sell,basic,Basic,179,143,per-month,2,2026-09-26,https://www.kajabi.com/pricing
+kajabi,Kajabi,Kajabi LLC,sell,growth,Growth,249,199,per-month,11,2026-09-26,https://www.kajabi.com/pricing
+kajabi,Kajabi,Kajabi LLC,sell,pro,Pro,499,399,per-month,26,2026-09-26,https://www.kajabi.com/pricing
+kit,Kit,Kit,grow,newsletter,Newsletter,0,,per-month,,2026-09-27,https://intercom.help/convertkit/en/articles/16627071-the-kit-free-plan
+kit,Kit,Kit,grow,creator,Creator,39,,per-month,2,2026-09-27,https://intercom.help/convertkit/en/articles/4494683-creator-vs-pro-choose-the-right-plan
+kit,Kit,Kit,grow,creator-pro,Creator Pro,79,,per-month,,2026-09-27,https://intercom.help/convertkit/en/articles/4494683-creator-vs-pro-choose-the-right-plan
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,free,Free,0,,per-month,,2026-10-06,https://www.klaviyo.com/pricing
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,email-500,Email (500 active profiles),20,,per-month,,2026-10-06,https://www.klaviyo.com/pricing
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,email-1000,"Email (1,000 active profiles)",30,,per-month,,2026-10-06,https://www.klaviyo.com/pricing
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,email-10000,"Email (10,000 active profiles)",150,,per-month,,2026-10-06,https://www.klaviyo.com/pricing
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,email-50000,"Email (50,000 active profiles)",720,,per-month,,2026-10-06,https://www.klaviyo.com/pricing
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,email-60000,"Email (60,000 active profiles)",860,,per-month,,2026-10-06,https://www.klaviyo.com/pricing
+klaviyo,Klaviyo,"Klaviyo, Inc.",grow,email-enterprise,"Email (150,000+ active profiles)",,,custom,,2026-10-06,https://www.klaviyo.com/pricing
+mailchimp,Mailchimp,Intuit Mailchimp,grow,free,Free,0,,per-month,1,2026-09-27,https://mailchimp.com/pricing/marketing/compare-plans/
+mailchimp,Mailchimp,Intuit Mailchimp,grow,essentials,Essentials,13,,per-month,3,2026-09-27,https://mailchimp.com/pricing/marketing/
+mailchimp,Mailchimp,Intuit Mailchimp,grow,standard,Standard,20,,per-month,5,2026-09-27,https://mailchimp.com/pricing/marketing/
+mailchimp,Mailchimp,Intuit Mailchimp,grow,premium,Premium,350,297.5,per-month,,2026-09-27,https://mailchimp.com/pricing/marketing/
+notion,Notion,"Notion Labs, Inc.",organize,free,Free,0,0,per-seat-month,,2026-09-27,https://www.notion.com/pricing
+notion,Notion,"Notion Labs, Inc.",organize,plus,Plus,12,10,per-seat-month,,2026-09-27,https://www.notion.com/pricing
+notion,Notion,"Notion Labs, Inc.",organize,business,Business,24,20,per-seat-month,,2026-09-27,https://www.notion.com/pricing
+notion,Notion,"Notion Labs, Inc.",organize,enterprise,Enterprise,,,custom,,2026-09-27,https://www.notion.com/pricing
+pipedrive,Pipedrive,Pipedrive Inc.,run,lite,Lite,24,14,per-seat-month,,2026-09-26,https://www.pipedrive.com/es/pricing
+pipedrive,Pipedrive,Pipedrive Inc.,run,growth,Growth,49,39,per-seat-month,,2026-09-26,https://www.pipedrive.com/es/pricing
+pipedrive,Pipedrive,Pipedrive Inc.,run,premium,Premium,79,59,per-seat-month,,2026-09-26,https://www.pipedrive.com/es/pricing
+pipedrive,Pipedrive,Pipedrive Inc.,run,ultimate,Ultimate,99,79,per-seat-month,,2026-09-26,https://www.pipedrive.com/es/pricing
+se-ranking,SE Ranking,SE Ranking,grow,core,Core,129,103.2,per-month,1,2026-09-26,https://seranking.com/subscription.html
+se-ranking,SE Ranking,SE Ranking,grow,growth,Growth,279,223.2,per-month,3,2026-09-26,https://seranking.com/subscription.html
+se-ranking,SE Ranking,SE Ranking,grow,enterprise,Enterprise,,,custom,,2026-09-26,https://seranking.com/subscription.html
+semrush,Semrush,Semrush Holdings,grow,free,Free,0,,per-month,,2026-09-26,https://www.semrush.com/pricing/seo-ai-search/
+semrush,Semrush,Semrush Holdings,grow,seo,SEO,139.95,117.33,per-month,1,2026-09-26,https://www.semrush.com/pricing/seo-ai-search/
+semrush,Semrush,Semrush Holdings,grow,starter,Starter (SEO + AI Search),199,165.17,per-month,1,2026-09-26,https://www.semrush.com/pricing/seo-ai-search/
+semrush,Semrush,Semrush Holdings,grow,pro-plus,Pro+ (SEO + AI Search),299,248.17,per-month,1,2026-09-26,https://www.semrush.com/pricing/seo-ai-search/
+semrush,Semrush,Semrush Holdings,grow,advanced,Advanced (SEO + AI Search),549,455.67,per-month,1,2026-09-26,https://www.semrush.com/pricing/seo-ai-search/
+semrush,Semrush,Semrush Holdings,grow,enterprise,Semrush for Enterprise,,,custom,,2026-09-26,https://www.semrush.com/pricing/seo-ai-search/
+shopify,Shopify,Shopify Inc.,sell,agentic,Agentic,0,,per-month,,2026-09-26,https://www.shopify.com/pricing
+shopify,Shopify,Shopify Inc.,sell,basic,Basic,39,29,per-month,,2026-09-26,https://www.shopify.com/pricing
+shopify,Shopify,Shopify Inc.,sell,grow,Grow,105,79,per-month,,2026-09-26,https://www.shopify.com/pricing
+shopify,Shopify,Shopify Inc.,sell,advanced,Advanced,399,299,per-month,,2026-09-26,https://www.shopify.com/pricing
+shopify,Shopify,Shopify Inc.,sell,plus,Plus,,2500,per-month,,2026-09-26,https://www.shopify.com/plus/pricing
+squarespace,Squarespace,"Squarespace, Inc.",site,basic,Basic,25,19,per-site-month,,2026-09-26,https://www.squarespace.com/pricing
+squarespace,Squarespace,"Squarespace, Inc.",site,core,Core,39,29,per-site-month,,2026-09-26,https://www.squarespace.com/pricing
+squarespace,Squarespace,"Squarespace, Inc.",site,plus,Plus,65,49,per-site-month,,2026-09-26,https://www.squarespace.com/pricing
+squarespace,Squarespace,"Squarespace, Inc.",site,advanced,Advanced,139,99,per-site-month,,2026-09-26,https://www.squarespace.com/pricing
+systeme-io,Systeme.io,ITACWT Limited (systeme.io),sell,free,Free,0,0,per-month,,2026-09-26,https://systeme.io/pricing
+systeme-io,Systeme.io,ITACWT Limited (systeme.io),sell,startup,Startup,17,14.17,per-month,,2026-09-26,https://systeme.io/pricing
+systeme-io,Systeme.io,ITACWT Limited (systeme.io),sell,webinar,Webinar,47,39.17,per-month,,2026-09-26,https://systeme.io/pricing
+systeme-io,Systeme.io,ITACWT Limited (systeme.io),sell,unlimited,Unlimited,97,80.83,per-month,,2026-09-26,https://systeme.io/pricing
+systeme-io,Systeme.io,ITACWT Limited (systeme.io),sell,for-teams,For teams,,,custom,,2026-09-26,https://systeme.io/pricing
+webflow,Webflow,"Webflow, Inc.",site,starter-site,Starter (Site plan),0,0,per-site-month,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,basic,Basic,25,15,per-site-month,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,premium,Premium,39,25,per-site-month,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,ecommerce-standard,Ecommerce Standard,42,29,per-site-month,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,ecommerce-plus,Ecommerce Plus,84,74,per-site-month,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,ecommerce-advanced,Ecommerce Advanced,235,212,per-site-month,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,team,Team (Platform plan),,2500,per-month,10,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,enterprise,Enterprise,,,custom,,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,starter-workspace,Starter Workspace,0,0,per-workspace-month,1,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,core-workspace,Core Workspace,28,19,per-workspace-month,1,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,growth-workspace,Growth Workspace,60,49,per-workspace-month,1,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,freelancer-workspace,Freelancer Workspace,24,16,per-workspace-month,1,2026-09-26,https://webflow.com/pricing
+webflow,Webflow,"Webflow, Inc.",site,agency-workspace,Agency Workspace,42,35,per-workspace-month,1,2026-09-26,https://webflow.com/pricing
+wix,Wix,Wix.com Ltd.,site,free,Free,0,0,per-site-month,,2026-09-27,https://www.wix.com/plans
+wix,Wix,Wix.com Ltd.,site,light,Light,,17,per-site-month,,2026-09-27,https://www.wix.com/plans
+wix,Wix,Wix.com Ltd.,site,core,Core,,29,per-site-month,,2026-09-27,https://www.wix.com/plans
+wix,Wix,Wix.com Ltd.,site,business,Business,,39,per-site-month,,2026-09-27,https://www.wix.com/plans
+wix,Wix,Wix.com Ltd.,site,business-elite,Business Elite,,159,per-site-month,,2026-09-27,https://www.wix.com/plans
+wix,Wix,Wix.com Ltd.,site,enterprise,Enterprise,,,custom,,2026-09-27,https://www.wix.com/plans
+woocommerce,WooCommerce,Automattic (WooCommerce),sell,woocommerce,WooCommerce (free core plugin),0,0,per-month,,2026-09-26,https://woocommerce.com/pricing/
+zoho-crm,Zoho CRM,Zoho Corporation,run,free,Free,0,0,per-month,3,2026-09-27,https://www.zoho.com/crm/zohocrm-pricing.html
+zoho-crm,Zoho CRM,Zoho Corporation,run,standard,Standard,20,14,per-seat-month,,2026-09-27,https://www.zoho.com/crm/complete-feature-list.html
+zoho-crm,Zoho CRM,Zoho Corporation,run,professional,Professional,35,23,per-seat-month,,2026-09-27,https://www.zoho.com/crm/complete-feature-list.html
+zoho-crm,Zoho CRM,Zoho Corporation,run,enterprise,Enterprise,50,40,per-seat-month,,2026-09-27,https://www.zoho.com/crm/complete-feature-list.html
+zoho-crm,Zoho CRM,Zoho Corporation,run,ultimate,Ultimate,65,52,per-seat-month,,2026-09-27,https://www.zoho.com/crm/complete-feature-list.html
