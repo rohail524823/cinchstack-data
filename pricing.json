@@ -7651,7 +7651,7 @@
         {
           "id": "smart-coupons",
           "name": "Smart Coupons (by StoreApps)",
-          "price": 129,
+          "price": 99,
           "unit": "per year, per site",
           "note": "A third-party extension sold on the Woo Marketplace.",
           "source": "https://woocommerce.com/collection/woocommerce-essentials/"
@@ -7669,7 +7669,7 @@
           "name": "WooCommerce Essentials collection (10 products)",
           "price": 753,
           "unit": "per year, per site",
-          "note": "\"Get 10 extensions for $753\", with a year of updates and a 30-day money-back guarantee. The ten are WooPayments and Google for WooCommerce (both free), Product Add-Ons, Product Bundles and Gift Cards ($79 each), AutomateWoo ($159), Smart Coupons ($129), Composite Products ($149), Jetpack VaultPress Backup ($120) and Luminate ($79). Bought separately, the eight paid items total $873/year (79 × 4 + 159 + 129 + 149 + 120), so the bundle saves $120.",
+          "note": "\"Get 10 extensions for $753\", with a year of updates and a 30-day money-back guarantee. The ten are WooPayments and Google for WooCommerce (both free), Product Add-Ons, Product Bundles and Gift Cards ($79 each), AutomateWoo ($159), Smart Coupons ($99, down from $129 on 16 October 2026), Composite Products ($149), Jetpack VaultPress Backup ($120) and Luminate ($79). Bought separately, the eight paid items total $843/year (79 × 4 + 159 + 99 + 149 + 120), so the bundle saves $90.",
           "source": "https://woocommerce.com/collection/woocommerce-essentials/"
         }
       ],
@@ -7925,7 +7925,7 @@
         {
           "url": "https://woocommerce.com/collection/woocommerce-essentials/",
           "label": "WooCommerce Essentials collection (bundle price and individual extension prices)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-10-16"
         },
         {
           "url": "https://woocommerce.com/refund-policy/",
