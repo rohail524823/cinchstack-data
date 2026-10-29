@@ -2140,14 +2140,6 @@
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
         },
         {
-          "id": "content-ai-image",
-          "name": "Content AI image, pay-per-use",
-          "rate": 0.063,
-          "unit": "per image",
-          "note": "Text is $0.0945 per 1,000 words.",
-          "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
-        },
-        {
           "id": "whatsapp-marketing-us",
           "name": "WhatsApp marketing template message (US & Canada)",
           "rate": 0.0263,
@@ -3131,9 +3123,9 @@
         {
           "id": "expert-agent",
           "name": "Expert Agent (AI chat agent for a site)",
-          "price": 79,
-          "unit": "per agent per month (standard rate since Oct 1, 2026); each agent includes 1,000 messages and 250 AI credits per month",
-          "note": "The standard rate has no multi-agent discount and no rate lock. The $49/agent/month early-adopter rate (locked for 12 months, with 30% off a 2nd-plus agent) applied only to agents bought Aug 1–Sep 30, 2026, and has ended. Kajabi's own pricing page still listed Expert Agents as \"Coming soon\" on every plan on Oct 1, 2026, so it is unclear whether a new signup can buy one despite the published help-center pricing.",
+          "price": 49,
+          "unit": "per agent per month; each agent includes 1,000 messages and 250 AI credits per month",
+          "note": "Kajabi's help center lists $49 per agent a month, with 30% off ($34.30 per agent) when you buy more than one (re-read 28 October 2026). On 1 October 2026 it listed $79 as the standard rate after a $49 early-adopter offer ended. Kajabi's own pricing page listed Expert Agents as \"Coming soon\" on every plan on 1 October 2026.",
           "source": "https://help.kajabi.com/en/articles/17174557-expert-agents-overview"
         }
       ],
@@ -3373,8 +3365,8 @@
         },
         {
           "url": "https://help.kajabi.com/en/articles/17174557-expert-agents-overview",
-          "label": "Help center: Expert Agents overview and pricing ($79/agent/month standard rate after Sep 30 2026; the $49 early-adopter rate covered Aug 1–Sep 30 2026)",
-          "checkedOn": "2026-10-01"
+          "label": "Help center: Expert Agents overview and pricing ($49/agent/month, 30% off a second and later agent)",
+          "checkedOn": "2026-10-28"
         },
         {
           "url": "https://help.kajabi.com/articles/resources/support/dedicated-customer-success-manager-csm",
