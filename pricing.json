@@ -6546,7 +6546,6 @@
         "The \"For teams\" plan has no published price. It is quoted only on a sales call.",
         "Monthly-plan checkout pages are not public (systeme.io/startup and /unlimited return 404, and /webinar is an inactive page). The monthly prices come from the pricing page and the plans API it loads. Monthly upgrades happen inside the app.",
         "The Perks rows in the comparison table (free migration, early access) and other check-mark features are drawn as icons and did not come through as text. Free-migration eligibility comes from the free-migration page instead.",
-        "The pricing FAQ tells agencies wanting white label or resale to contact Systeme.io for white-label pricing, while the help center describes a self-serve white-label feature. We captured no separate white-label fee.",
         "SMS cost depends on the customer's own Twilio account and was not captured.",
         "Third-party reviews say Startup cost $27/month before a cut to $17 in May 2025. We did not capture a vendor source for the old price, so it is not recorded in history."
       ],
@@ -6554,7 +6553,7 @@
         {
           "url": "https://systeme.io/pricing",
           "label": "Systeme.io pricing page (monthly billing, default view)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-06"
         },
         {
           "url": "https://systeme.io/pricing",
@@ -6594,7 +6593,7 @@
         {
           "url": "https://help.systeme.io/article/1758-how-to-cancel-a-subscription-to-systeme-io",
           "label": "Help center: canceling a Systeme.io subscription",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-06"
         },
         {
           "url": "https://help.systeme.io/article/1709-invite-assistant-account",
@@ -6619,7 +6618,7 @@
         {
           "url": "https://help.systeme.io/article/7532-white-label-feature",
           "label": "Help center: white label feature",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-06"
         },
         {
           "url": "https://help.systeme.io/article/225-how-to-connect-your-stripe-account-to-systeme-io",
@@ -7653,8 +7652,8 @@
           "name": "Jetpack VaultPress Backup (real-time backups)",
           "price": 120,
           "unit": "per year, per site",
-          "note": null,
-          "source": "https://woocommerce.com/collection/woocommerce-essentials/"
+          "note": "Billed annually; the product page offers a 14-day free trial (read 6 November 2026).",
+          "source": "https://woocommerce.com/products/jetpack-backup/"
         },
         {
           "id": "essentials-collection",
@@ -7993,6 +7992,11 @@
           "url": "https://woocommerce.com/about/",
           "label": "About Woo (WooCommerce launched 2011; acquired by Automattic 2015)",
           "checkedOn": "2026-09-26"
+        },
+        {
+          "url": "https://woocommerce.com/products/jetpack-backup/",
+          "label": "Jetpack VaultPress Backup product page ($120 billed annually, 14-day free trial)",
+          "checkedOn": "2026-11-06"
         }
       ]
     },
