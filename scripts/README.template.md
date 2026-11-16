@@ -2,7 +2,7 @@
 
 What small-business software really costs: {{tools}} tools, {{plans}} plans and {{scenarios}} team-size cost estimates. Each figure carries the date it was read from the vendor's own pricing page and the page it came from. Last checked: {{lastChecked}}.
 
-The dataset is published at **[cinchstack.com/data](https://cinchstack.com/data/)**. This repository is an automatic copy. A GitHub Action downloads the files from the site every day and commits any change, so this repository's history is also a dated record of how the prices changed.
+The dataset is published at **[cinchstack.com/data](https://cinchstack.com/data/)**. This repository is an automatic copy. A GitHub Action downloads the files from the site every day and commits any change, so this repository's history is also a dated record of how the prices changed. The same files are also on [Hugging Face](https://huggingface.co/datasets/rohailnisar/cinchstack-software-pricing) and [Kaggle](https://www.kaggle.com/datasets/rohailnisar/cinchstack-software-pricing).
 
 ## Files
 

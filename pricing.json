@@ -6,7 +6,7 @@
   "citation": "CinchStack, \"Software pricing dataset\", https://cinchstack.com/data/, licensed CC BY 4.0.",
   "currency": "USD",
   "lastChecked": "2026-11-16",
-  "lastAutomatedCheck": "2026-11-09",
+  "lastAutomatedCheck": "2026-11-16",
   "notes": "Prices are US list prices as published on each vendor pricing page on the checkedOn date. monthly = price when billed month to month; annualMonthly = effective monthly price when billed yearly; null means not offered. Scenario totals are CinchStack estimates for the stated assumptions. Dates: checkedOn (per tool) and lastChecked (the newest of them) are when a record was last read in full against the vendor pages; automatedCheck.ranOn (per tool) and lastAutomatedCheck are when the weekly script last re-opened those pages and looked for the recorded prices, with status passed when all were still there.",
   "tools": [
     {
@@ -20,7 +20,7 @@
       "page": "https://cinchstack.com/tools/activecampaign/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -323,8 +323,8 @@
       "page": "https://cinchstack.com/tools/ahrefs/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
-        "status": "changed"
+        "ranOn": "2026-11-16",
+        "status": "passed"
       },
       "freeTier": {
         "exists": true,
@@ -891,7 +891,7 @@
       "page": "https://cinchstack.com/tools/clickfunnels/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -1103,8 +1103,8 @@
       "page": "https://cinchstack.com/tools/clickup/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
-        "status": "blocked"
+        "ranOn": "2026-11-16",
+        "status": "changed"
       },
       "freeTier": {
         "exists": true,
@@ -1490,7 +1490,7 @@
       "page": "https://cinchstack.com/tools/framer/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "not-checkable"
       },
       "freeTier": {
@@ -1824,8 +1824,8 @@
       "page": "https://cinchstack.com/tools/gohighlevel/pricing/",
       "checkedOn": "2026-11-16",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
-        "status": "changed"
+        "ranOn": "2026-11-16",
+        "status": "passed"
       },
       "freeTier": {
         "exists": false,
@@ -2924,7 +2924,7 @@
       "page": "https://cinchstack.com/tools/hubspot/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -3413,7 +3413,7 @@
       "page": "https://cinchstack.com/tools/kajabi/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -3877,7 +3877,7 @@
       "page": "https://cinchstack.com/tools/kit/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -4041,7 +4041,7 @@
       "page": "https://cinchstack.com/tools/klaviyo/pricing/",
       "checkedOn": "2026-10-06",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -4431,7 +4431,7 @@
       "page": "https://cinchstack.com/tools/mailchimp/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -4625,7 +4625,7 @@
       "page": "https://cinchstack.com/tools/notion/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -4813,7 +4813,7 @@
       "page": "https://cinchstack.com/tools/pipedrive/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -5186,7 +5186,7 @@
       "page": "https://cinchstack.com/tools/se-ranking/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -5484,7 +5484,7 @@
       "page": "https://cinchstack.com/tools/semrush/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -6030,7 +6030,7 @@
       "page": "https://cinchstack.com/tools/shopify/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -6490,7 +6490,7 @@
       "page": "https://cinchstack.com/tools/squarespace/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -6831,7 +6831,7 @@
       "page": "https://cinchstack.com/tools/systeme-io/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -7564,7 +7564,7 @@
       "page": "https://cinchstack.com/tools/webflow/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "not-checkable"
       },
       "freeTier": {
@@ -8217,7 +8217,7 @@
       "page": "https://cinchstack.com/tools/wix/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -8461,7 +8461,7 @@
       "page": "https://cinchstack.com/tools/woocommerce/pricing/",
       "checkedOn": "2026-09-26",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "passed"
       },
       "freeTier": {
@@ -8919,7 +8919,7 @@
       "page": "https://cinchstack.com/tools/zoho-crm/pricing/",
       "checkedOn": "2026-09-27",
       "automatedCheck": {
-        "ranOn": "2026-11-09",
+        "ranOn": "2026-11-16",
         "status": "not-checkable"
       },
       "freeTier": {
