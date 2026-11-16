@@ -1,6 +1,6 @@
 # CinchStack software pricing dataset
 
-What small-business software really costs: 22 tools, 111 plans and 66 team-size cost estimates. Each figure carries the date it was read from the vendor's own pricing page and the page it came from. Last checked: 6 October 2026.
+What small-business software really costs: 22 tools, 111 plans and 66 team-size cost estimates. Each figure carries the date it was read from the vendor's own pricing page and the page it came from. Last checked: 16 November 2026.
 
 The dataset is published at **[cinchstack.com/data](https://cinchstack.com/data/)**. This repository is an automatic copy. A GitHub Action downloads the files from the site every day and commits any change, so this repository's history is also a dated record of how the prices changed.
 

@@ -5,8 +5,9 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "citation": "CinchStack, \"Software pricing dataset\", https://cinchstack.com/data/, licensed CC BY 4.0.",
   "currency": "USD",
-  "lastChecked": "2026-10-06",
-  "notes": "Prices are US list prices as published on each vendor pricing page on the checkedOn date. monthly = price when billed month to month; annualMonthly = effective monthly price when billed yearly; null means not offered. Scenario totals are CinchStack estimates for the stated assumptions.",
+  "lastChecked": "2026-11-16",
+  "lastAutomatedCheck": "2026-11-09",
+  "notes": "Prices are US list prices as published on each vendor pricing page on the checkedOn date. monthly = price when billed month to month; annualMonthly = effective monthly price when billed yearly; null means not offered. Scenario totals are CinchStack estimates for the stated assumptions. Dates: checkedOn (per tool) and lastChecked (the newest of them) are when a record was last read in full against the vendor pages; automatedCheck.ranOn (per tool) and lastAutomatedCheck are when the weekly script last re-opened those pages and looked for the recorded prices, with status passed when all were still there.",
   "tools": [
     {
       "id": "activecampaign",
@@ -18,6 +19,10 @@
       "pricingPage": "https://www.activecampaign.com/pricing",
       "page": "https://cinchstack.com/tools/activecampaign/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No permanent free plan. ActiveCampaign offers only the 14-day free trial; none of the pricing page, the plan-overview Help Center article, or the onboarding page mention a free-forever tier."
@@ -317,6 +322,10 @@
       "pricingPage": "https://ahrefs.com/pricing",
       "page": "https://cinchstack.com/tools/ahrefs/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "changed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Ahrefs Free (formerly Ahrefs Webmaster Tools) needs no credit card and does not expire. For websites you verify it gives Site Explorer (1K backlinks and keywords visible at once), Site Audit (5K crawl credits a month per project) and Web Analytics (up to 1M events per project). Social Media Manager (unlimited while in beta), AI Content Helper (1 document a month) and the SEO Toolbar work without verification. Keywords Explorer and Rank Tracker are not included."
@@ -428,9 +437,9 @@
         {
           "id": "enterprise",
           "name": "Enterprise",
-          "monthly": 1499,
-          "annualMonthly": 1249.17,
-          "priceUnit": "per-month",
+          "monthly": null,
+          "annualMonthly": null,
+          "priceUnit": "custom",
           "seatsIncluded": 3,
           "limits": [
             "From 3 users included; unlimited additional users",
@@ -441,7 +450,7 @@
             "150,000 rows per report; from 10M export rows a month",
             "From 83 tracked AI prompts in Brand Radar (from 2,500 checks a month)"
           ],
-          "note": "Not month-to-month: the plan card says 'Annual commitment required' (source 0) and the help center gives Enterprise a minimum 1-year subscription (source 16), so paying monthly means 12 × $1,499 = $17,988 over the minimum term. Paid upfront it is $14,990 a year (source 1): $14,990 ÷ 12 = $1,249.17 a month. The comparison table lists included users as 'From 3' and several limits as 'From', and the card's button is 'Talk to sales'. Only Enterprise can pay by bank or wire transfer (sources 17 and 18).",
+          "note": "Quote only: as saved on 16 November 2026 the pricing page shows 'Talk to sales' on the Enterprise card and in the comparison table, with no price (source 0). Ahrefs published $1,499 a month and $14,990 a year for Enterprise on 26 September 2026 (our saved copy of the page from that day, and source 1); both prices were gone by 16 November 2026, along with the card's 'Annual commitment required' line. The help center still gives Enterprise a minimum 1-year subscription (source 16). The comparison table lists included users as 'From 3' and several limits as 'From'. The pricing FAQ says Enterprise plans can also pay by wire transfer on request (sources 0 and 17).",
           "source": "https://ahrefs.com/pricing"
         }
       ],
@@ -503,14 +512,6 @@
           "source": "https://ahrefs.com/pricing"
         },
         {
-          "id": "extra-user-enterprise",
-          "name": "Additional user on Enterprise",
-          "price": 100,
-          "unit": "per user per month",
-          "note": "No cap on additional users. No prepaid annual user price is shown for Enterprise on the pricing page.",
-          "source": "https://ahrefs.com/pricing"
-        },
-        {
           "id": "lite-extra-credits-prepaid",
           "name": "Lite: 500 extra credits a month, prepaid annually",
           "price": 300,
@@ -563,7 +564,7 @@
           "name": "Brand Radar AI Visibility Index",
           "price": 199,
           "unit": "per month (entry price)",
-          "note": "Look up any brand's mentions across Ahrefs' database of 449M+ AI prompts, with no setup. The pricing page says 'Get started from $199/mo' (source 0). Brand Radar can be bought without a paid plan, and buyers also get an Ahrefs Free account.",
+          "note": "Look up any brand's mentions across Ahrefs' database of AI prompts, with no setup: 449M+ on the Brand Radar page as saved on 26 September 2026, and '572 million+' on the pricing page as saved on 16 November 2026 (source 0). The pricing page says 'Get started from $199/mo' (source 0). Brand Radar can be bought without a paid plan, and buyers also get an Ahrefs Free account.",
           "source": "https://ahrefs.com/brand-radar"
         },
         {
@@ -573,6 +574,14 @@
           "unit": "per month",
           "note": "The AI Visibility Index card on the Brand Radar page carries the label '$699/MO FOR ALL MODELS'; the index covers AI Overviews, AI Mode, ChatGPT, Perplexity, Gemini and Copilot.",
           "source": "https://ahrefs.com/brand-radar"
+        },
+        {
+          "id": "traffic-analytics",
+          "name": "Traffic Analytics: Traffic reports",
+          "price": 99,
+          "unit": "per month",
+          "note": "First seen on the pricing page as saved on 16 November 2026: total estimated traffic for any domain, a breakdown across 10+ channels including AI traffic, and historical data since March 2025. A second tier, 'Traffic & Market reports' at $299/mo, is marked 'Soon'. The page does not say whether it needs a paid plan.",
+          "source": "https://ahrefs.com/pricing"
         },
         {
           "id": "custom-prompts-basic",
@@ -713,14 +722,16 @@
         "Pay-as-you-go prices for export rows and crawl credits are not published on the captured pages; the pricing FAQ only says they are charged automatically once enabled. On API units the two FAQs disagree: the pricing-page FAQ lists them among pay-as-you-go purchases, while Ahrefs' FAQ page says extra API units can't be bought below Enterprise. No price was captured for either.",
         "The 'RB Enterprise' Report Builder add-on (unlimited reports and widgets) is listed on the Report Builder page without a price.",
         "Brand Radar AI Visibility Index: the card shows $199/mo and a '$699/MO FOR ALL MODELS' label. Which AI platforms the $199 entry price covers was not captured.",
-        "Enterprise terms beyond the list price (included users 'From 3', limits marked 'From', add-ons and overage billing) are agreed with sales and were not captured.",
+        "Enterprise pricing is quote-only. The $1,499 monthly and $14,990 yearly prices published on 26 September 2026 were gone from the pricing page by 16 November 2026, as was the $100 a month price for an additional Enterprise user. Whether sales still quotes those amounts is not known, and the other Enterprise terms (included users 'From 3', limits marked 'From', add-ons and overage billing) are agreed with sales and were not captured.",
+        "Annual prices for Lite, Standard and Advanced ($1,290, $2,490 and $4,490 a year) and the prepaid annual user prices were read on 26 September 2026. The 16 November 2026 re-check saved the pricing page's monthly view only, which still says 'Pay annually, save up to 17%'.",
+        "Not re-read on 16 November 2026, so still as of 26 September 2026: every source other than the pricing page's monthly view and the help article on one-month subscriptions.",
         "Add-on prices on annual billing: the pricing page shows the same monthly add-on prices with the annual switch on, and no annual prices for add-ons were captured."
       ],
       "sources": [
         {
           "url": "https://ahrefs.com/pricing",
           "label": "Ahrefs pricing page, default monthly view (plan cards, add-ons, full comparison table, FAQ)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://ahrefs.com/pricing",
@@ -800,7 +811,7 @@
         {
           "url": "https://help.ahrefs.com/en/articles/73821-can-i-subscribe-to-ahrefs-services-for-1-month",
           "label": "Ahrefs help: Can I subscribe for 1 month? (Enterprise minimum 1 year)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://ahrefs.com/faq",
@@ -879,6 +890,10 @@
       "pricingPage": "https://www.clickfunnels.com/pricing",
       "page": "https://cinchstack.com/tools/clickfunnels/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No free-forever plan. The cheapest paid plan is Launch ($81-$97/month). New signups get a free trial instead of an ongoing free tier (see trial)."
@@ -1087,6 +1102,10 @@
       "pricingPage": "https://clickup.com/pricing",
       "page": "https://cinchstack.com/tools/clickup/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "blocked"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free Forever has no time limit and allows unlimited members and tasks, but caps file storage at 60MB per Workspace, allows 5 Spaces and 100 Automation actions a month, and gives many paid features only as a fixed number of trial 'uses' per Workspace that never reset: 60 each for Custom Fields, Gantt, Timeline, Workload and Dashboards, and 100 for time tracking. Guests on Free Forever get full edit access that can't be limited. Brain AI is a trial of 25 uses for a Workspace of up to 10 people, and AI add-ons can't be bought on Free Forever. ClickUp's FAQ says it offers a grace period when a limit is reached."
@@ -1470,6 +1489,10 @@
       "pricingPage": "https://www.framer.com/pricing",
       "page": "https://cinchstack.com/tools/framer/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "not-checkable"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free plan with no stated time limit: $0, a free framer.site subdomain (no custom domain), 1 GB bandwidth/month, and 500 one-time AI credits to try (no monthly renewal). Framer's Free-plan FAQ separately states it also includes up to 10 CMS collections, 1,000 pages, and 5 MB file uploads for design/exploration use, and that a workspace with no paid Site plan supports up to 3 collaborating editors for free."
@@ -1799,7 +1822,11 @@
       "website": "https://www.gohighlevel.com/",
       "pricingPage": "https://www.gohighlevel.com/pricing",
       "page": "https://cinchstack.com/tools/gohighlevel/pricing/",
-      "checkedOn": "2026-09-26",
+      "checkedOn": "2026-11-16",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "changed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No free plan. Every plan starts with a 14-day free trial; after that the cheapest option is Starter at $97/month."
@@ -1807,7 +1834,7 @@
       "trial": {
         "days": 14,
         "cardRequired": null,
-        "summary": "14-day free trial on Starter, Unlimited or Agency Pro with full access to the chosen tier. The pricing page says billing begins automatically at the end of the trial unless canceled, and that usage-based telecom or third-party fees may be charged during the trial. Whether a card is taken up front was not captured (the signup form's 'Trial Details' step was not reached)."
+        "summary": "14-day free trial on Starter, Unlimited or Founder (formerly Agency Pro) with full access to the chosen tier. The pricing page says billing begins automatically at the end of the trial unless canceled, and that usage-based telecom or third-party fees may be charged during the trial. Whether a card is taken up front was not captured (the signup form's 'Trial Details' step was not reached)."
       },
       "plans": [
         {
@@ -1818,12 +1845,12 @@
           "priceUnit": "per-month",
           "seatsIncluded": null,
           "limits": [
-            "3 sub-accounts (locations)",
+            "3 sub-accounts (locations), per the pricing page's FAQ; the plan card stopped listing the cap by 16 November 2026",
             "Cannot rebill phone, email or AI usage to sub-accounts (rebilling starts on the $297 plan)",
-            "Dedicated email IPs not available (Unlimited and Agency Pro only)",
-            "Basic API access only (location-level API keys)"
+            "Dedicated email IPs not available (Unlimited and Founder only)",
+            "API access covers standard endpoints only: HighLevel's API article, modified 13 November 2026, gives every plan OAuth 2.0 and Private Integration Tokens but restricts some endpoints, such as creating sub-accounts and enabling SaaS, to the $497 plan"
           ],
-          "note": "$970 billed yearly ($80.83/mo). HighLevel's FAQ also calls it 'Agency Starter' and describes it as 'perfect for a single business owner or a new agency'. Users are unlimited, so there is no per-seat charge.",
+          "note": "Yearly billing was $970 ($80.83/mo) when the pricing page last showed its annual toggle, on 26 September 2026; the page as saved on 16 November 2026 shows monthly prices only (see unverified). The plan card now reads 'For one business or a few clients'. HighLevel's FAQ also calls it 'Agency Starter' and describes it as 'perfect for a single business owner or a new agency'. Users are unlimited, so there is no per-seat charge.",
           "source": "https://www.gohighlevel.com/pricing"
         },
         {
@@ -1835,21 +1862,21 @@
           "seatsIncluded": null,
           "limits": [
             "Usage can be rebilled to sub-accounts at cost only; HighLevel's terms forbid marking up pass-through fees below the $497 plan (phone and email rebilling default to a fixed 1.05x to cover Stripe fees)",
-            "AI Employee rebilling requires Agency Pro",
+            "AI Employee rebilling requires the $497 Founder plan",
             "No SaaS mode"
           ],
-          "note": "$2,970 billed yearly ($247.50/mo). Marketed as 'built for growing agencies'.",
+          "note": "Yearly billing was $2,970 ($247.50/mo) when the pricing page last showed its annual toggle, on 26 September 2026; HighLevel's dedicated IP article, updated 5 November 2026, still calls it the $297/$2970 plan. The plan card now reads 'For agencies managing unlimited clients' (in September: 'Built for growing agencies').",
           "source": "https://www.gohighlevel.com/pricing"
         },
         {
           "id": "agency-pro",
-          "name": "Agency Pro",
+          "name": "Founder (formerly Agency Pro)",
           "monthly": 497,
           "annualMonthly": 414.17,
           "priceUnit": "per-month",
           "seatsIncluded": null,
           "limits": [],
-          "note": "$4,970 billed yearly ($414.17/mo). HighLevel's help articles also call it the '$497 SaaS plan'.",
+          "note": "Yearly billing was $4,970 ($414.17/mo) when the pricing page last showed its annual toggle, on 26 September 2026; HighLevel's dedicated IP article, updated 5 November 2026, still calls it the $497/$4970 plan. Renamed from Agency Pro in November 2026 at the same price; the pricing page's FAQ still calls it the 'Pro Plan ($497/mo)' and its add-on blurb still says 'Agency Pro plan'.",
           "source": "https://www.gohighlevel.com/pricing"
         },
         {
@@ -1866,11 +1893,19 @@
       ],
       "addOns": [
         {
+          "id": "ai-employee-starter",
+          "name": "AI Employee Starter plan",
+          "price": 20,
+          "unit": "per sub-account (location) per month",
+          "note": "Sold only to agencies on the $497 Founder plan. Covers AI Assistants (a base usage allowance for Ask AI, AI Studio and Creator Studio, plus Content AI) on standard models. Conversation AI, Voice AI, Reviews AI and Managed Agents are not included and bill at pay-per-use rates.",
+          "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
+        },
+        {
           "id": "ai-employee-growth",
           "name": "AI Employee Growth plan",
           "price": 50,
           "unit": "per sub-account (location) per month",
-          "note": "Includes 1,000 Conversation AI agent responses and 100 Voice AI minutes a month, unlimited Reviews AI and Content AI; overage billed at pay-per-use rates. Phone System charges still apply to calls.",
+          "note": "Includes 1,000 Conversation AI agent responses, 100 Voice AI minutes and 100 Managed Agent runs a month, unlimited Reviews AI and Content AI, and twice the Starter plan's allowance for Ask AI, AI Studio and Creator Studio. Usage past an allowance pauses unless Extra Usage is switched on, and then bills at pay-per-use rates. Phone System charges still apply to calls.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
         },
         {
@@ -1878,7 +1913,7 @@
           "name": "AI Employee Unlimited plan",
           "price": 97,
           "unit": "per sub-account (location) per month",
-          "note": "Unlimited Conversation AI, Voice AI, Reviews AI and Content AI subject to fair use; Agent Studio is still pay-per-use and Phone System charges still apply to calls.",
+          "note": "Unlimited Conversation AI, Voice AI, Reviews AI and Content AI subject to fair use, 1,000 Managed Agent runs a month and five times the Starter plan's allowance for Ask AI, AI Studio and Creator Studio. Agent Studio (Flow Agents) is still pay-per-use and Phone System charges still apply to calls.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
         },
         {
@@ -1974,7 +2009,7 @@
           "name": "HighLevel Certification Program",
           "price": 97,
           "unit": "per month",
-          "note": "Or $970 per year.",
+          "note": "Or $970 per year. Still priced in HighLevel's Pricing Guide (updated 29 October 2026, where it is called the HL Certificate Program), but no longer in the add-on list on the pricing page as saved on 16 November 2026.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000001156-highlevel-pricing-guide"
         },
         {
@@ -1990,7 +2025,7 @@
           "name": "Pause Plan (keep data instead of canceling)",
           "price": 27,
           "unit": "per month",
-          "note": "Mentioned in HighLevel's billing FAQ as the way to keep data (canceled accounts are deleted after 90 days); the same article also says agency accounts cannot be paused.",
+          "note": "HighLevel's Pause Account article describes it for agency users: platform access stops while core data and settings are kept, phone numbers and A2P registrations are deleted after 14 days, and reselling subscriptions are canceled. Canceled accounts are deleted after 90 days instead. The billing FAQ quotes the same $27 but also says agency accounts cannot be paused.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/48001208376-billing-related-questions-for-agencies"
         }
       ],
@@ -2021,10 +2056,10 @@
         },
         {
           "id": "sms-carrier-fee",
-          "name": "SMS carrier fee (T-Mobile or Verizon, outbound)",
+          "name": "SMS carrier fee (T-Mobile, outbound)",
           "rate": 0.0045,
           "unit": "per outbound SMS segment, on top of the SMS rate",
-          "note": "Varies by recipient carrier: AT&T $0.0035, US Cellular $0.0050, all other carriers $0.0040. Inbound carrier fees run $0.0025 to $0.0100.",
+          "note": "Varies by recipient carrier: AT&T $0.0035, Verizon $0.0050, US Cellular $0.0050, all other carriers $0.0042. Verizon was $0.0045 and other carriers $0.0040 when checked on 26 September 2026. Inbound carrier fees run $0.0025 to $0.0100.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/48001223556-lc-phone-pricing-structure"
         },
         {
@@ -2112,7 +2147,7 @@
           "name": "Conversation AI, pay-per-use (GPT-5 input tokens)",
           "rate": 1.25,
           "unit": "per 1M input tokens",
-          "note": "Output tokens $10.00 per 1M. GPT-5 Mini is $0.25 in / $2.00 out. Applies to locations not on an AI Employee plan.",
+          "note": "Output tokens $10.00 per 1M. GPT-5 Mini is $0.25 in / $2.00 out. Applies to sub-accounts with no AI Employee plan or on the $20 Starter plan, and to usage past the Growth allowance when Extra Usage is on.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
         },
         {
@@ -2120,7 +2155,7 @@
           "name": "Voice AI engine, pay-per-use",
           "rate": 0.045,
           "unit": "per minute",
-          "note": "Plus text-to-speech (OpenAI or Cartesia $0.015/min, ElevenLabs V3 $0.170/min), LLM tokens, and Phone System call charges.",
+          "note": "Plus text-to-speech (OpenAI or Cartesia $0.015/min, ElevenLabs $0.035 to $0.17/min depending on the model; V3 is $0.17), LLM tokens, and Phone System call charges.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
         },
         {
@@ -2128,7 +2163,7 @@
           "name": "Voice AI speech-to-speech (Gemini live model)",
           "rate": 0.1,
           "unit": "per minute, all-in AI rate",
-          "note": "OpenAI gpt-realtime is $0.20/min. Phone System call charges still apply.",
+          "note": "OpenAI's GPT Realtime 2 and 2.1 are $0.20/min and its GPT Live 1 is $0.12/min. Phone System call charges still apply.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing"
         },
         {
@@ -2150,9 +2185,9 @@
         {
           "id": "whatsapp-utility-us",
           "name": "WhatsApp utility template message (US & Canada)",
-          "rate": 0.0036,
+          "rate": 0.0034,
           "unit": "per delivered message",
-          "note": "Billable in and out of the 24-hour customer service window since 1 October 2026; until 30 September 2026 it was free inside an open window.",
+          "note": "HighLevel's table listed $0.0036 on 26 September 2026 and lists $0.0034 in the guide as updated on 4 November 2026. $0.0034 is also the pre-fee rate in its October 2026 CSV, so the 5% payment-processing fee may come on top. Billable in and out of the 24-hour customer service window since 1 October 2026; until 30 September 2026 it was free inside an open window.",
           "source": "https://help.gohighlevel.com/support/solutions/articles/155000001428"
         }
       ],
@@ -2218,7 +2253,7 @@
         {
           "size": "solo",
           "label": "Solo operator, 1,000 contacts, 200 texts a month",
-          "assumptions": "1 user, 1,000 contacts, 2,000 marketing emails/mo and 200 outbound SMS/mo for one business location using HighLevel's built-in LC Phone and LC Email, billed month to month. One local number ($1.15). Each SMS is 1 segment (160 plain-text characters or fewer): 200 x $0.00747 = $1.494. Carrier fee assumed at $0.0045/segment (T-Mobile/Verizon outbound rate): 200 x $0.0045 = $0.90. A2P 10DLC Low Volume Mixed campaign $1.50/mo (the $22.50 one-time registration is not included). Email 2,000 x $0.675/1,000 = $1.35. Inbound texts and inbound emails are also billed but not counted. No AI Employee, no calls, no premium workflow steps beyond the 100 free executions. HighLevel's 5% location-level markup on pass-through charges is applied to the carrier fees and the A2P monthly fee (HighLevel's docs conflict on whether it applies without rebilling; see unverified).",
+          "assumptions": "1 user, 1,000 contacts, 2,000 marketing emails/mo and 200 outbound SMS/mo for one business location using HighLevel's built-in LC Phone and LC Email, billed month to month. One local number ($1.15). Each SMS is 1 segment (160 plain-text characters or fewer): 200 x $0.00747 = $1.494. Carrier fee assumed at $0.0045/segment (T-Mobile's outbound rate; AT&T is $0.0035, Verizon and US Cellular $0.0050, other carriers $0.0042): 200 x $0.0045 = $0.90. A2P 10DLC Low Volume Mixed campaign $1.50/mo (the $22.50 one-time registration is not included). Email 2,000 x $0.675/1,000 = $1.35. Inbound texts and inbound emails are also billed but not counted. No AI Employee, no calls, no premium workflow steps beyond the 100 free executions. HighLevel's 5% location-level markup on pass-through charges is applied to the carrier fees and the A2P monthly fee (HighLevel's docs conflict on whether it applies without rebilling; see unverified).",
           "plan": "starter",
           "billing": "monthly",
           "monthly": 103.51,
@@ -2337,136 +2372,544 @@
         }
       ],
       "unverified": [
-        "Whether the 14-day trial started from the pricing page requires a card up front: that signup form asks for business details first and its 'Trial Details' step was not reached. The pricing page says billing starts automatically when the trial ends unless canceled. This applies only to the 14-day route: the 30-day trial on HighLevel's Bootcamp page shows a Payment Information step in its signup form (snapshot of 6 October 2026).",
-        "The 5% pass-through markup on A2P and carrier fees: the markup article (9 Sep 2026) says it applies whether or not rebilling is enabled and the Phone System guide (24 Sep 2026) says it 'always applies', but the same guide also says 'only when re-billing is enabled' and the A2P fee article says HighLevel adds no markup. The scenarios include it; without it they fall by $0.12 (solo), $0.30 (small) and $1.20 (growing).",
+        "Whether the 14-day trial started from the pricing page requires a card up front: that signup form asks for business details first and its 'Trial Details' step was not reached, on 26 September or on 16 November 2026. The pricing page says billing starts automatically when the trial ends unless canceled. This applies only to the 14-day route: the 30-day trial on HighLevel's Bootcamp page shows a Payment Information step in its signup form (snapshots of 6 October and 16 November 2026).",
+        "The 5% pass-through markup on A2P and carrier fees: the markup article (9 Sep 2026) says it applies whether or not rebilling is enabled, while the Phone System guide, as revised on 12 October 2026, says it applies only when re-billing is enabled, and the A2P fee article says HighLevel adds no markup. Both articles were read again on 16 November 2026 and still disagree, and the rebilling articles re-read that day do not settle it. Starter cannot rebill at all, so on the guide's reading the scenarios would not carry it. The scenarios include it; without it they fall by $0.12 (solo), $0.30 (small) and $1.20 (growing).",
         "The Phone System guide lists A2P monthly fees with the 5% built in (Sole Proprietor 'up to $2.10', Low Volume '$1.50-$10.50', High Volume '$10.50'), while the A2P article lists $2.00 / $1.50 / $10.00. The scenarios use the A2P article's $1.50.",
-        "Carrier fees depend on each recipient's carrier; the scenarios assume $0.0045 per outbound segment for every text.",
+        "Carrier fees depend on each recipient's carrier; the scenarios assume $0.0045 per outbound segment for every text, which is T-Mobile's rate. Verizon and US Cellular are $0.0050, AT&T $0.0035 and other carriers $0.0042 as of 16 November 2026.",
         "Pay-per-use Conversation AI and Voice AI cost per conversation depends on token counts and cannot be priced in advance; only the per-token and per-minute rates are recorded.",
-        "The per-message price for US WhatsApp service messages beyond the free 1,000 a month (in force since 1 October 2026) appears only in an attached CSV ($0.0034 before the 5% fee), not in the guide's table.",
+        "The per-message price for US WhatsApp service messages beyond the free 1,000 a month (in force since 1 October 2026) appears only in an attached CSV ($0.0034 before the 5% fee), not in the guide's table, whose Service column still shows the rates through 30 September. The CSV, downloaded again on 16 November 2026, is unchanged ($0.0250 marketing, $0.0034 utility and service for North America). The guide's US utility rate now equals the CSV's $0.0034, so whether the 5% fee is added on top of it is not stated.",
         "HighLevel's pricing pages list no platform fee on payments taken through Stripe, PayPal, Square and other connected processors, but processor fees were not captured.",
         "Domain purchase prices vary by TLD and were not captured.",
         "Whether a dedicated email sending domain costs anything: the setup article lists no fee, but does not say it is free.",
-        "The $27/month Pause Plan is mentioned in HighLevel's billing FAQ, which also says agency accounts cannot be paused.",
+        "The $27/month Pause Plan: HighLevel's Pause Account article describes it for agency users and its billing FAQ quotes the same price, but the same FAQ also says agency accounts cannot be paused or placed on hold.",
         "Enterprise pricing is quote-only.",
         "HighLevel's in-app Wallet Pricing page (the source it calls authoritative for usage rates) requires a login and was not captured.",
         "The dedicated email IP's unit: the pricing page and the dedicated IP article say $59 a month per IP, while HighLevel's Pricing Guide says \"$59/mo per dedicated domain\". The record follows the two that agree.",
-        "The Workflow Pro unit: HighLevel's Pricing Guide calls the $10 tier a price \"for the agency\" in one line but lists it per enabled sub-account in its table, and the Workflow Pro article counts allowances per sub-account. The record treats it as per sub-account."
+        "The Workflow Pro unit: HighLevel's Pricing Guide calls the $10 tier a price \"for the agency\" in one line but lists it per enabled sub-account in its table, and the Workflow Pro article counts allowances per sub-account. The record treats it as per sub-account.",
+        "Annual plan prices: the pricing page as saved on 16 November 2026 shows no annual toggle and no yearly prices. $970, $2,970 and $4,970 remain in page elements the stylesheet hides (the $2,970 and $4,970 elements sit in the Founder and Unlimited cards the wrong way round), and the dedicated IP article (5 November 2026) still names the $297/$2970 and $497/$4970 plans, as do the phone and email rebilling articles (both modified 27 October 2026). Starter's $970 has no visible source newer than 26 September 2026. The record keeps the September annual prices; confirm at checkout.",
+        "Plan card rewording on the pricing page (16 November 2026): Starter's card no longer lists '3 Sub-Accounts' or '24/7 Support' (the page's FAQ still gives 3 sub-accounts, and the card now says 'Chat and phone support'); 'White-label desktop app' now sits on the Unlimited card, while the page's FAQ says without naming a plan that you can white-label the desktop web app, so whether Starter includes it is not stated; the Founder card no longer lists user/agent reporting or advanced API access (HighLevel's Founder article confirms advanced API access).",
+        "API access by plan: HighLevel's API article, rewritten on 13 November 2026, no longer separates location-level keys from agency-level keys and OAuth. It gives Starter, Unlimited and Founder OAuth 2.0 and Private Integration Tokens, documents the Create Sub-Account and Enable SaaS endpoints as needing Agency Pro, and says those restrictions still have to be mapped to the Founder plan. The pricing page lists 'Basic API access' on the Unlimited card only, and the Founder article says advanced API access is included. Which other endpoints are restricted is not stated."
       ],
       "sources": [
         {
           "url": "https://www.gohighlevel.com/pricing",
           "label": "HighLevel pricing page (monthly view, add-ons, FAQ)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://www.gohighlevel.com/pricing",
-          "label": "HighLevel pricing page (annual toggle)",
+          "label": "HighLevel pricing page (annual toggle, last shown on 26 September 2026)",
           "checkedOn": "2026-09-26"
         },
         {
           "url": "https://www.gohighlevel.com/pricing",
           "label": "HighLevel pricing page (Enterprise plan details)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000001156-highlevel-pricing-guide",
           "label": "HighLevel Pricing Guide (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing",
           "label": "AI Product Pricing (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001223556-lc-phone-pricing-structure",
           "label": "Phone System Pricing & Billing Guide (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000007147-understanding-the-5-markup-on-phone-system-pass-through-charges",
           "label": "Understanding the 5% Markup on Phone System Pass-Through Charges (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000005200-a2p-10dlc-messaging-fees-registration-monthly-and-carrier-costs",
           "label": "A2P 10DLC Messaging Fees (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001220605",
           "label": "What is LC Email? (pricing and sending limits, help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000001428",
           "label": "WhatsApp Pricing, Billing, and Rebilling Guide (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/helpdesk/attachments/155081573332",
           "label": "WhatsApp Pricing - October 2026 CSV (attachment to the WhatsApp guide)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000002095-rebilling-reselling-and-wallets-explained",
           "label": "Rebilling, Reselling, and Wallets Explained (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001177740-activate-saas-mode-request-payment-and-configure-phone-rebilling",
           "label": "Activate SaaS Mode and Configure Phone Rebilling (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001188579-email-re-billing-on-the-unlimited-297-2970-and-pro-497-4970-plans",
-          "label": "Email Re-Billing on the Unlimited and Pro Plans (help center)",
-          "checkedOn": "2026-09-26"
+          "label": "Email Re-Billing on the Unlimited and Founder Plans (help center)",
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000005678",
-          "label": "How to enable and rebill Premium Features for Workflows (help center)",
-          "checkedOn": "2026-09-26"
+          "label": "How to Enable and Rebill Workflow Premium Features (help center)",
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000003971",
           "label": "Workflows Pro Plan - New Pricing Tiers (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000001152",
           "label": "What is a Dedicated IP? (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001226115-dedicated-email-sending-domains-overview-setup",
           "label": "Dedicated Email Sending Domains Overview & Setup (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001208376-billing-related-questions-for-agencies",
           "label": "Billing Related Questions for Agencies (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api",
           "label": "HighLevel API: access by plan level (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000005620-wallet-auto-recharge-and-smart-adjustment-settings",
           "label": "Wallet Auto Recharge and Smart Adjustment Settings (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.gohighlevel.com/support/solutions/articles/155000008643-wallet-pricing-page",
           "label": "Wallet Pricing Page (help center)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://www.gohighlevel.com/terms-of-service",
           "label": "HighLevel Terms of Service (last updated June 2026)",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/about-us",
+          "label": "HighLevel about us page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/affiliate-policy",
+          "label": "HighLevel affiliate agreement page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://marketing.gohighlevel.com/brandkit-affiliates",
+          "label": "HighLevel affiliate brand kit page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/affiliate-policy/program-rules",
+          "label": "HighLevel affiliate program policies page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/joinaffiliate-23423",
+          "label": "HighLevel affiliate program page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://affiliate.gohighlevel.com/",
+          "label": "HighLevel affiliate signup page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/ai",
+          "label": "HighLevel ai page page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/highlevel-bootcamp",
+          "label": "HighLevel bootcamp 30 day trial page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/crm",
+          "label": "HighLevel crm page page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+          "label": "HighLevel developer docs: mcp server",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/other/rate-limits/",
+          "label": "HighLevel developer docs: rate limits",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001728-the-affiliate-commander-program",
+          "label": "HighLevel help center: affiliate commander program",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001897-my-affiliate-commission-looks-incorrect",
+          "label": "HighLevel help center: affiliate commission looks incorrect",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001182420-first-steps-to-be-a-successful-highlevel-affiliate",
+          "label": "HighLevel help center: affiliate first steps",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000002797-integrishield-affiliate-content-compliance",
+          "label": "HighLevel help center: affiliate integrishield compliance",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001208136-affiliate-payouts-where-how-when-can-i-get-paid-",
+          "label": "HighLevel help center: affiliate payouts",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001202637-how-to-use-affiliate-portal",
+          "label": "HighLevel help center: affiliate portal",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001212884-how-can-i-refer-affiliate-customers-to-highlevel-pro-",
+          "label": "HighLevel help center: affiliate pro and trial links",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001213448-affiliate-referral-page-leads-customers-cancelled-statuses",
+          "label": "HighLevel help center: affiliate referral statuses",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000002420-affiliate-split-commissions-overview",
+          "label": "HighLevel help center: affiliate split commissions",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001896-where-is-my-affiliate-payout-",
+          "label": "HighLevel help center: affiliate where is my payout",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001729-affiliates-first-steps-for-your-referrals",
+          "label": "HighLevel help center: affiliates first steps",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48000980325-become-a-highlevel-affiliate",
+          "label": "HighLevel help center: become an affiliate",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001180534-introducing-the-highlevel-founder-plan",
+          "label": "HighLevel help center: founder plan",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008391-highlevel-mcp-for-anthropic-increased-scopes",
+          "label": "HighLevel help center: mcp anthropic scopes",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000009114-connect-chatgpt-and-codex-to-leadconnector-mcp",
+          "label": "HighLevel help center: mcp chatgpt codex",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008360-highlevel-mcp-multi-account-support-for-claude",
+          "label": "HighLevel help center: mcp claude multi account",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000007777-automate-workflows-with-ghl-mcp-and-n8n",
+          "label": "HighLevel help center: mcp n8n",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+          "label": "HighLevel help center: mcp server",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000004578-overview-of-premium-customer-support",
+          "label": "HighLevel help center: premium support",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008015-getting-started-with-the-saas-configurator",
+          "label": "HighLevel help center: saas configurator",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000002129-highlevel-saas-mode-faqs",
+          "label": "HighLevel help center: saas mode faqs",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008349-saas-multi-brands-overview",
+          "label": "HighLevel help center: saas multi brands",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000004175-saas-reselling-add-ons-with-saas-plans",
+          "label": "HighLevel help center: saas reselling add ons",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000007968-saas-v1-vs-saas-v2-what-s-the-difference-",
+          "label": "HighLevel help center: saas v1 vs v2",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000004185-guide-from-zero-to-saas-mode-sales-troubleshooting",
+          "label": "HighLevel help center: saas zero to sales",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/search/solutions?term=free+trial",
+          "label": "HighLevel help center: search free trial",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000009784-how-to-access-your-free-implementation-call-during-trial",
+          "label": "HighLevel help center: trial implementation call",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008099-white-label-desktop-app-setup-guide",
+          "label": "HighLevel help center: whitelabel desktop app setup",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48000982207-how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app",
+          "label": "HighLevel help center: whitelabel domain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000000089-how-to-promote-and-customize-your-whitelabel-mobile-app",
+          "label": "HighLevel help center: whitelabel mobile app",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000007149-self-service-whitelabelled-mobile-app-customizer",
+          "label": "HighLevel help center: whitelabel mobile customizer",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/7658b9",
+          "label": "HighLevel home after click 1 page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/7658b9",
+          "label": "HighLevel home after click 2 page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/7658b9",
+          "label": "HighLevel home after click 3 page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/7658b9",
+          "label": "HighLevel home after click 4 page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/7658b9",
+          "label": "HighLevel home page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "label": "HighLevel pricing after click 1 page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "label": "HighLevel pricing annual check page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "label": "HighLevel pricing starter check page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "label": "HighLevel pricing page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/ai",
+          "label": "HighLevel AI page (second capture)",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/ecommerce",
+          "label": "HighLevel ecommerce page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008488-highlevel-api-migration-guide-how-to-move-to-private-integrations",
+          "label": "HighLevel help center: API migration guide to private integrations",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001220286-getting-started-with-blogs-and-blog-posts",
+          "label": "HighLevel help center: getting started with blogs",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005136-how-to-cancel-location-subscriptions-from-the-agency-billing-page",
+          "label": "HighLevel help center: cancel location subscriptions from agency billing",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000004281-what-happen-s-to-your-data-when-you-cancel-your-highlevel-subscription-",
+          "label": "HighLevel help center: what happens to your data when you cancel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005132-connecting-your-domain-on-ghl-a-guide",
+          "label": "HighLevel help center: connecting your domain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001153720-how-to-set-up-root-domain-subdomain-for-funnels-websites",
+          "label": "HighLevel help center: domain setup for funnels and websites",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001157-how-to-set-up-an-e-commerce-online-store-websites-",
+          "label": "HighLevel help center: ecommerce store setup",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001238482-contacts-export-as-csv-upgrade",
+          "label": "HighLevel help center: export contacts as CSV",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000009039-create-funnels-and-websites-with-funnel-ai-in-ask-ai",
+          "label": "HighLevel help center: Funnel AI in Ask AI",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000006713-funnel-website-ai",
+          "label": "HighLevel help center: Funnel and Website AI",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005057-how-top-launch-a-highlevel-funnel",
+          "label": "HighLevel help center: how to launch a funnel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000007379-pause-account-feature-everything-you-need-to-know",
+          "label": "HighLevel help center: Pause Account feature ($27 Pause Plan)",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000008062-releasing-purchased-domains-from-a-cancelled-account",
+          "label": "HighLevel help center: releasing purchased domains from a canceled account",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001232056-restore-a-deleted-phone-number",
+          "label": "HighLevel help center: restore a deleted phone number",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/search/solutions?term=zapier",
+          "label": "HighLevel help center: search zapier",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001236650-template-library-overview-setup",
+          "label": "HighLevel help center: template library",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005069-getting-started-launch-a-website-from-template",
+          "label": "HighLevel help center: launch a website from a template",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001633-websites-overview",
+          "label": "HighLevel help center: websites overview",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001231366-wordpress-hosting-specs-market-comparison-and-new-pricing-plans",
+          "label": "HighLevel help center: WordPress hosting plans",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000007579-setup-guide-for-wordpress-hosting",
+          "label": "HighLevel help center: WordPress hosting setup guide",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005109-how-to-connect-a-highlevel-sub-account-with-zapier",
+          "label": "HighLevel help center: connect a sub-account with Zapier",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001207048-how-to-create-sub-accounts-using-zapier",
+          "label": "HighLevel help center: create sub-accounts using Zapier",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48000981397-zapier-troubleshooting-duplicate-contacts-or-added-to-campaigns-multiple-times",
+          "label": "HighLevel help center: Zapier duplicate contacts",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48000981689-zapier-troubleshooting-zap-isn-t-working-",
+          "label": "HighLevel help center: Zapier troubleshooting",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000001183-how-to-use-webhooks-in-highlevel-zapier-",
+          "label": "HighLevel help center: webhooks with Zapier",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "label": "HighLevel pricing page (annual prices read from hidden page elements; toggle not shown)",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/no-code-website-builder",
+          "label": "HighLevel website builder page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://www.gohighlevel.com/wordpress",
+          "label": "HighLevel WordPress page",
+          "checkedOn": "2026-11-16"
         }
       ]
     },
@@ -2480,6 +2923,10 @@
       "pricingPage": "https://www.hubspot.com/pricing/marketing",
       "page": "https://cinchstack.com/tools/hubspot/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free tools for up to 2 users and up to 1,000 contacts: Smart CRM, forms, landing pages, live chat and email marketing capped at 2,000 sends per calendar month with HubSpot branding, plus 1 automated email action. No credit card required. No marketing SMS."
@@ -2965,6 +3412,10 @@
       "pricingPage": "https://www.kajabi.com/pricing",
       "page": "https://cinchstack.com/tools/kajabi/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No ongoing free plan. Kajabi offers only a 14-day free trial on every plan (see trial); there is no free-forever tier."
@@ -3425,6 +3876,10 @@
       "pricingPage": "https://kit.com/pricing",
       "page": "https://cinchstack.com/tools/kit/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free plan (Kit's current Help Center calls it the 'Free' plan; the same $0 tier is also labeled 'Newsletter' elsewhere, see the plan note): $0/month for as long as active subscribers stay under 10,000 (Kit's marketing copy rounds this to 'up to 10,000 subscribers'). Includes unlimited forms, landing pages and email broadcasts, audience tagging/segmentation, selling digital products and subscriptions, a newsletter feed/website, API access, and enrollment in the Creator Network's free recommendations. Does not include Visual Automations, email sequences, Rules/RSS campaigns, AI Connectors, or paid App Store apps — those need Creator or Creator Pro."
@@ -3585,6 +4040,10 @@
       "pricingPage": "https://www.klaviyo.com/pricing",
       "page": "https://cinchstack.com/tools/klaviyo/pricing/",
       "checkedOn": "2026-10-06",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free with no time limit while the account stays at or under 250 active profiles and 500 email sends per month; it also includes $5 of mobile-messaging usage and $5 of Composer AI usage per month. Going over 250 profiles blocks sending until you are back under the limit or upgrade; hitting the 500-email cap blocks email until the next month or an upgrade. Email support is included only for the first 60 days after sign-up, then Community and Help Center only."
@@ -3971,6 +4430,10 @@
       "pricingPage": "https://mailchimp.com/pricing/marketing/",
       "page": "https://cinchstack.com/tools/mailchimp/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free plan, $0/month, limited to 250 contacts (comparison page's 'Maximum Contact Count' row) with a maximum of 500 email sends per month or 250 per day. Includes 1 seat, 1 audience; no role-based access, Marketing Automation Flows, SMS/MMS Marketing, or Generative AI features. Email support is offered for the first 30 days only. Sending pauses if the contact or send limit is exceeded."
@@ -4161,6 +4624,10 @@
       "pricingPage": "https://www.notion.com/pricing",
       "page": "https://cinchstack.com/tools/notion/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free costs $0 per member/month. Pages and blocks are unlimited in a one-person workspace but become 'limited' once the workspace has 2 or more members, and Notion doesn't publish that cap. Free also limits file uploads to 5 MB each, page history to 7 days, external guests to 10 and charts to 1, and it includes only a 'Limited Trial' of Notion Agent, Meeting Notes and Research mode."
@@ -4345,6 +4812,10 @@
       "pricingPage": "https://www.pipedrive.com/en/pricing",
       "page": "https://cinchstack.com/tools/pipedrive/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No free-forever plan. Pipedrive offers only a 14-day free trial of a paid plan (see trial)."
@@ -4714,6 +5185,10 @@
       "pricingPage": "https://seranking.com/subscription.html",
       "page": "https://cinchstack.com/tools/se-ranking/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No persistent free tier. SE Ranking is trial-only: a 14-day free trial with no credit card required, after which continued use requires subscribing to a paid Core, Growth or Enterprise plan."
@@ -5008,6 +5483,10 @@
       "pricingPage": "https://www.semrush.com/prices/",
       "page": "https://cinchstack.com/tools/semrush/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free account with no credit card: 1 demo project, 10 reports per day across the main tools, one website to monitor, 10 keywords in Position Tracking and a limited set of AI Visibility features."
@@ -5550,6 +6029,10 @@
       "pricingPage": "https://www.shopify.com/pricing",
       "page": "https://cinchstack.com/tools/shopify/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "The Agentic plan costs $0/mo but only puts your products in Shopify Catalog for AI chat channels and the Shop channel. You can build an online store on it but not publish it or take orders through its checkout, and Shopify Payments or third-party transaction fees apply to sales made through Shopify's direct checkout. There is no free plan for running a public online store."
@@ -6006,6 +6489,10 @@
       "pricingPage": "https://www.squarespace.com/pricing",
       "page": "https://cinchstack.com/tools/squarespace/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": false,
         "summary": "No free-forever plan. Squarespace offers a 14-day free trial of a paid plan instead; trial sites can't accept real payments."
@@ -6343,6 +6830,10 @@
       "pricingPage": "https://systeme.io/pricing",
       "page": "https://cinchstack.com/tools/systeme-io/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free forever with no credit card: 2,000 contacts, 3 sales funnels, 1 automation rule, 1 custom domain, 1 course (500 students), unlimited email sends and 0% transaction fees. The limit that matters for a seller is in the terms: Free accounts are capped at USD 10,000 in lifetime sales revenue. Once you hit it you get 3 days to upgrade, and then your payment pages stop taking new sales. The Systeme.io affiliate badge can't be removed from pages on Free."
@@ -6455,21 +6946,21 @@
           "label": "Card processing (Stripe standard US rate)",
           "display": "2.9% + 30¢ per successful domestic card charge",
           "kind": "percent-of-sales",
-          "source": "https://stripe.com/pricing"
+          "source": "https://help.systeme.io/article/225-how-to-connect-your-stripe-account-to-systeme-io"
         },
         {
           "id": "sms-via-twilio",
           "label": "SMS sending (through your own Twilio account)",
           "display": "Billed by Twilio at Twilio's rates",
           "kind": "other",
-          "source": "https://help.systeme.io/article/4483-how-to-send-sms-messages-with-systeme-io"
+          "source": "https://help.systeme.io/article/1709-invite-assistant-account"
         },
         {
           "id": "automatic-upgrade",
           "label": "Automatic upgrade when usage exceeds a paid plan's limits",
           "display": "Next plan's price for the rest of the billing period",
           "kind": "other",
-          "source": "https://systeme.io/terms-and-conditions"
+          "source": "https://systeme.io/webinarannual"
         }
       ],
       "scenarios": [
@@ -6554,6 +7045,16 @@
           "url": "https://systeme.io/pricing",
           "label": "Systeme.io pricing page (monthly billing, default view)",
           "checkedOn": "2026-11-06"
+        },
+        {
+          "url": "https://systeme.io/pricing",
+          "label": "Systeme.io pricing page, saved again to look for offers (none shown)",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/startupannual",
+          "label": "Startup annual order page, saved again ($170 a year)",
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://systeme.io/pricing",
@@ -6654,6 +7155,401 @@
           "url": "https://systeme.io/why-systeme",
           "label": "Why Systeme.io page (founder and founding year)",
           "checkedOn": "2026-09-26"
+        },
+        {
+          "url": "https://systeme.io/affiliate-agreement",
+          "label": "Systeme.io affiliate agreement page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/affiliate-management",
+          "label": "Systeme.io affiliate management page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/affiliate-program",
+          "label": "Systeme.io affiliate program page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/online-communities",
+          "label": "Systeme.io feature page: online communities",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/online-courses",
+          "label": "Systeme.io feature page: online courses",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/307-how-to-activate-payments-by-stripe-or-paypal",
+          "label": "Systeme.io help center: activate payments",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/331-how-to-integrate-the-affiliate-badge-on-your-page-to-earn-lifetime-commissions",
+          "label": "Systeme.io help center: affiliate badge commissions",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/701-how-to-find-the-bank-details-of-its-affiliates-to-pay-them",
+          "label": "Systeme.io help center: affiliate bank details",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/328-how-to-create-an-affiliate-link-from-a-system-io-blog-post",
+          "label": "Systeme.io help center: affiliate link blog post",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1508-how-to-tag-an-affiliate-link",
+          "label": "Systeme.io help center: affiliate link tag",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/261-understanding-affiliate-link-tracking",
+          "label": "Systeme.io help center: affiliate link tracking",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/212-how-to-send-the-affiliate-links-to-your-affiliates",
+          "label": "Systeme.io help center: affiliate links for your affiliates",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2102-how-to-add-a-method-for-receiving-commissions",
+          "label": "Systeme.io help center: affiliate payout method",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1527-how-to-automate-affiliate-payouts-with-paypal",
+          "label": "Systeme.io help center: affiliate payouts paypal",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/161-how-to-connect-your-transferwise-account-to-automate-payments-to-your-affiliates",
+          "label": "Systeme.io help center: affiliate payouts wise",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/162-how-the-systeme-io-affiliate-program-works",
+          "label": "Systeme.io help center: affiliate program works",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1426-how-to-create-an-affiliate-link-with-an-external-page-to-systeme-io",
+          "label": "Systeme.io help center: affiliate proxy link",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/category/160-affiliation",
+          "label": "Systeme.io help center: affiliation category",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/316-how-to-authenticate-your-personal-domain-name",
+          "label": "Systeme.io help center: authenticate domain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/286-how-to-remove-the-affiliate-badge-from-your-page",
+          "label": "Systeme.io help center: badge",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2223-how-to-set-up-payment-on-delivery-on-systeme-io",
+          "label": "Systeme.io help center: cash on delivery",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/345-how-to-change-the-domain-name-of-a-funnel",
+          "label": "Systeme.io help center: change funnel domain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2106-how-to-automatically-grant-community-access-to-customers",
+          "label": "Systeme.io help center: community access",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1935-how-to-create-a-community",
+          "label": "Systeme.io help center: community",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2070-how-to-confirm-your-email-sender-address",
+          "label": "Systeme.io help center: confirm sender",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/135-how-to-connect-your-domain-to-systemeio",
+          "label": "Systeme.io help center: connect domain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/142-integrating-your-subdomain-into-systeme-io",
+          "label": "Systeme.io help center: connect subdomain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/301-what-is-the-difference-between-full-drip-content-access-and-partial-access-type",
+          "label": "Systeme.io help center: course access types",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1720-different-ways-access-course",
+          "label": "Systeme.io help center: course access ways",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/10578-how-to-create-an-assignment-for-a-course-lecture",
+          "label": "Systeme.io help center: course assignment",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/302-how-to-create-a-course-bundles",
+          "label": "Systeme.io help center: course bundles",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/3031-how-to-provide-your-students-with-a-certificate-of-completion",
+          "label": "Systeme.io help center: course certificate",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1717-create-a-quiz",
+          "label": "Systeme.io help center: course quiz",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/164-how-to-create-a-course-using-systemeio",
+          "label": "Systeme.io help center: create course",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2241-how-to-create-a-dmarc-record",
+          "label": "Systeme.io help center: dmarc",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/143-how-to-define-a-blog-or-a-page-created-with-systeme-io-as-your-domain-root",
+          "label": "Systeme.io help center: domain homepage",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2008-how-to-remove-sent-with-systemeio-and-customize-your-email-footer",
+          "label": "Systeme.io help center: email footer",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1661-what-happens-when-a-customers-subscription-payment-fails",
+          "label": "Systeme.io help center: failed subscription payment",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/10278-how-to-request-a-free-dns-setup-from-systeme-io-support",
+          "label": "Systeme.io help center: free dns setup",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/300-host-videos",
+          "label": "Systeme.io help center: host videos",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/8769-how-to-create-a-light-course",
+          "label": "Systeme.io help center: light course",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/3861-how-to-set-up-a-link-in-bio",
+          "label": "Systeme.io help center: link in bio",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/4455-how-to-manage-files-on-systeme-io",
+          "label": "Systeme.io help center: manage files",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/154-how-to-add-an-order-bump-to-a-payment-page",
+          "label": "Systeme.io help center: order bump",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/247-how-to-create-and-add-a-coupon-code-to-your-order-form",
+          "label": "Systeme.io help center: order form coupons",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/699-how-to-set-up-your-own-affiliate-program",
+          "label": "Systeme.io help center: own affiliate program",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/132-paypal-integration",
+          "label": "Systeme.io help center: paypal",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/292-how-to-create-and-sell-a-physical-product-on-systeme-io",
+          "label": "Systeme.io help center: physical product",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/153-how-to-create-and-configure-a-price-plan",
+          "label": "Systeme.io help center: price plan",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/259-how-to-refund-a-customer",
+          "label": "Systeme.io help center: refund customer",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2106-how-to-automatically-grant-community-access-to-customers",
+          "label": "Systeme.io help center: sell community access",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/237-how-to-sell-an-online-course",
+          "label": "Systeme.io help center: sell course",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/155-how-to-sell-your-ebook",
+          "label": "Systeme.io help center: sell ebook",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1761-how-to-modify-the-systeme-io-subdomain",
+          "label": "Systeme.io help center: systeme subdomain",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/243-how-to-create-an-upsell-and-a-downsell",
+          "label": "Systeme.io help center: upsell downsell",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/315-the-difference-between-an-upsell-and-an-order-bump",
+          "label": "Systeme.io help center: upsell vs order bump",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/221-what-is-transferwise",
+          "label": "Systeme.io help center: what is wise",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/email-marketing",
+          "label": "Systeme.io feature email marketing page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/marketing-automation",
+          "label": "Systeme.io feature marketing automation page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/sales-funnels",
+          "label": "Systeme.io feature sales funnels page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/website-builder",
+          "label": "Systeme.io feature website builder page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/features",
+          "label": "Systeme.io features page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1086-what-happens-when-my-account-gets-restricted",
+          "label": "Systeme.io help center: account restricted",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/147-how-to-create-a-funnel",
+          "label": "Systeme.io help center: create funnel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/626-how-to-deactivate-a-funnel",
+          "label": "Systeme.io help center: deactivate funnel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/1574-how-to-create-a-deadline-for-a-sales-funnel",
+          "label": "Systeme.io help center: deadline funnel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/2387-how-to-delete-a-funnel",
+          "label": "Systeme.io help center: delete funnel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/168-create-a-custom-page-how-systeme-io-editor-works",
+          "label": "Systeme.io help center: editor",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/305-how-to-move-duplicate-delete-page-from-sales-funnel",
+          "label": "Systeme.io help center: move duplicate page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/152-how-to-create-a-opt-in-page",
+          "label": "Systeme.io help center: optin page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/252-how-to-create-an-order-form-payment-page",
+          "label": "Systeme.io help center: order form",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/287-how-to-create-a-sales-page",
+          "label": "Systeme.io help center: sales page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/148-how-to-share-a-sales-funnel",
+          "label": "Systeme.io help center: share funnel",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/218-how-to-create-a-split-test",
+          "label": "Systeme.io help center: split test",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/321-how-to-create-a-thank-you-page",
+          "label": "Systeme.io help center: thank you page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://help.systeme.io/article/235-what-is-two-step-order-form",
+          "label": "Systeme.io help center: two step order form",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/",
+          "label": "Systeme.io home page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/privacy-policy",
+          "label": "Systeme.io privacy policy page",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "url": "https://systeme.io/templates",
+          "label": "Systeme.io templates page",
+          "checkedOn": "2026-11-16"
         }
       ]
     },
@@ -6667,6 +7563,10 @@
       "pricingPage": "https://webflow.com/pricing",
       "page": "https://cinchstack.com/tools/webflow/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "not-checkable"
+      },
       "freeTier": {
         "exists": true,
         "summary": "The Starter Site plan is free with no time limit, but it publishes only to a webflow.io subdomain and is capped at 2 static pages, 50 CMS items (20 Collections), 1 GB bandwidth (which Webflow says usually covers ~250 page views a month) and 50 form submissions over the site's lifetime. The free Starter Workspace includes 1 full seat, 2 staging sites and 200 AI credits a month. Webflow asks for a payment method when you first subscribe to a paid plan."
@@ -7316,6 +8216,10 @@
       "pricingPage": "https://www.wix.com/plans",
       "page": "https://cinchstack.com/tools/wix/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free plan with no stated time limit and no credit card required: reliable web hosting, the drag-and-drop editor, no-code design features, AI creation tools, and 1,000s of templates. It publishes to a Wix subdomain only (no custom domain) and keeps Wix branding on the site. It's excluded from Wix's 'Compare Plan Features' table, which compares only the four paid tiers."
@@ -7556,6 +8460,10 @@
       "pricingPage": "https://woocommerce.com/pricing/",
       "page": "https://cinchstack.com/tools/woocommerce/pricing/",
       "checkedOn": "2026-09-26",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "passed"
+      },
       "freeTier": {
         "exists": true,
         "summary": "The WooCommerce plugin is free to download and use, with no monthly subscription, no plan tiers and 0% revenue share. It includes unlimited products, orders and APIs. There is no free way to run a live store, though: WooCommerce runs on a WordPress site you host yourself, and Woo's own pricing page puts hosting at $25–$350/month for most stores. WooPayments and some Woo extensions, such as Google for WooCommerce, are free downloads."
@@ -8010,6 +8918,10 @@
       "pricingPage": "https://www.zoho.com/crm/zohocrm-pricing.html",
       "page": "https://cinchstack.com/tools/zoho-crm/pricing/",
       "checkedOn": "2026-09-27",
+      "automatedCheck": {
+        "ranOn": "2026-11-09",
+        "status": "not-checkable"
+      },
       "freeTier": {
         "exists": true,
         "summary": "Free for up to 3 users, no credit card required: contact/lead/deal management, follow-up reminders, workflow automation, 10 custom email templates, tasks/meetings/calls, data import/export, standard reports, APIs and mobile apps. Capped at 5,000 records (10MB) of storage, and has no Mass Email (bulk/marketing send) feature, which starts at Standard."

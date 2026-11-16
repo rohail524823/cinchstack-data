@@ -14,9 +14,9 @@ clickup,ClickUp,growing,Growing team: 15 seats,business,monthly,285,high,2026-09
 framer,Framer,solo,"Solo: 1 site, 1 editor, ~20-page blog/CMS, ~10k visits/mo",basic,monthly,15,high,2026-09-26
 framer,Framer,small,"Small team: 1 site, 3 editors, ~200 CMS items, ~50k visits/mo",pro,monthly,105,medium,2026-09-26
 framer,Framer,growing,"Growing team: 1 site, 8 editors, ~1,000 CMS items, ~250k visits/mo",pro,monthly,255,medium,2026-09-26
-gohighlevel,GoHighLevel,solo,"Solo operator, 1,000 contacts, 200 texts a month",starter,monthly,103.51,medium,2026-09-26
-gohighlevel,GoHighLevel,small,"Small team, 3 users, 5,000 contacts, 1,000 texts a month",starter,monthly,125.42,medium,2026-09-26
-gohighlevel,GoHighLevel,growing,"Growing team, 8 users, 25,000 contacts, 5,000 texts a month",starter,monthly,228.2,medium,2026-09-26
+gohighlevel,GoHighLevel,solo,"Solo operator, 1,000 contacts, 200 texts a month",starter,monthly,103.51,medium,2026-11-16
+gohighlevel,GoHighLevel,small,"Small team, 3 users, 5,000 contacts, 1,000 texts a month",starter,monthly,125.42,medium,2026-11-16
+gohighlevel,GoHighLevel,growing,"Growing team, 8 users, 25,000 contacts, 5,000 texts a month",starter,monthly,228.2,medium,2026-11-16
 hubspot,HubSpot,solo,"Solo operator, 1,000 contacts, on Marketing Hub Starter (SMS not included)",starter,monthly,20,high,2026-09-26
 hubspot,HubSpot,small,"Small team, 5,000 contacts with SMS, on Marketing Hub Professional",professional,annual,1100,medium,2026-09-26
 hubspot,HubSpot,growing,"Growing team, 25,000 contacts with SMS, on Marketing Hub Professional",professional,annual,2262.5,medium,2026-09-26

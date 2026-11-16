@@ -15,7 +15,7 @@ ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,starter,Starter,29,,per-month,1,2026-09-26,h
 ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,lite,Lite,129,107.5,per-month,1,2026-09-26,https://ahrefs.com/pricing
 ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,standard,Standard,249,207.5,per-month,1,2026-09-26,https://ahrefs.com/pricing
 ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,advanced,Advanced,449,374.17,per-month,1,2026-09-26,https://ahrefs.com/pricing
-ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,enterprise,Enterprise,1499,1249.17,per-month,3,2026-09-26,https://ahrefs.com/pricing
+ahrefs,Ahrefs,Ahrefs Pte. Ltd.,grow,enterprise,Enterprise,,,custom,3,2026-09-26,https://ahrefs.com/pricing
 clickfunnels,ClickFunnels,Etison LLC,sell,launch,Launch,97,81,per-month,2,2026-09-27,https://www.clickfunnels.com/pricing
 clickfunnels,ClickFunnels,Etison LLC,sell,scale,Scale,197,164,per-month,5,2026-09-27,https://www.clickfunnels.com/pricing
 clickfunnels,ClickFunnels,Etison LLC,sell,optimize,Optimize,297,248,per-month,10,2026-09-27,https://www.clickfunnels.com/pricing
@@ -28,10 +28,10 @@ framer,Framer,Framer B.V.,site,free,Free,0,0,per-site-month,3,2026-09-26,https:/
 framer,Framer,Framer B.V.,site,basic,Basic,15,10,per-site-month,1,2026-09-26,https://www.framer.com/pricing
 framer,Framer,Framer B.V.,site,pro,Pro,45,30,per-site-month,1,2026-09-26,https://www.framer.com/pricing
 framer,Framer,Framer B.V.,site,enterprise,Enterprise,,,custom,,2026-09-26,https://www.framer.com/pricing
-gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,starter,Starter,97,80.83,per-month,,2026-09-26,https://www.gohighlevel.com/pricing
-gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,unlimited,Unlimited,297,247.5,per-month,,2026-09-26,https://www.gohighlevel.com/pricing
-gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,agency-pro,Agency Pro,497,414.17,per-month,,2026-09-26,https://www.gohighlevel.com/pricing
-gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,enterprise,Enterprise,,,custom,,2026-09-26,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,starter,Starter,97,80.83,per-month,,2026-11-16,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,unlimited,Unlimited,297,247.5,per-month,,2026-11-16,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,agency-pro,Founder (formerly Agency Pro),497,414.17,per-month,,2026-11-16,https://www.gohighlevel.com/pricing
+gohighlevel,GoHighLevel,HighLevel LLC (a subsidiary of GoHighLevel Inc.),run,enterprise,Enterprise,,,custom,,2026-11-16,https://www.gohighlevel.com/pricing
 hubspot,HubSpot,"HubSpot, Inc.",run,free,Free tools,0,0,per-month,2,2026-09-26,https://legal.hubspot.com/hubspot-product-and-services-catalog
 hubspot,HubSpot,"HubSpot, Inc.",run,starter,Marketing Hub Starter,20,20,per-seat-month,,2026-09-26,https://legal.hubspot.com/hubspot-product-and-services-catalog
 hubspot,HubSpot,"HubSpot, Inc.",run,professional,Marketing Hub Professional,890,800,per-month,3,2026-09-26,https://www.hubspot.com/pricing/bundle?products=marketing-hub-professional_1&term=annual
