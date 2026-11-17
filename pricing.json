@@ -1201,14 +1201,6 @@
           "unit": "per Workspace member per month, billed monthly",
           "note": "$28 per member per month billed yearly. Also purchased per Workspace member per month. Everything in Brain AI plus unlimited fair use of AI Notetaker, AI Fields, AI Assign and Prioritize, AI Cards, Ambient Answers, Autopilot Agents and image generation, 5,000 AI Super Credits per user per month for Super Agents, and two hours of 1:1 live onboarding with an AI expert.",
           "source": "https://clickup.com/pricing"
-        },
-        {
-          "id": "ai-notetaker-hours",
-          "name": "AI Notetaker hour block",
-          "price": 12,
-          "unit": "per month for a 60-hour block (smallest block)",
-          "note": "ClickUp says the AI Notetaker add-on includes 20 free hours and more are bought as a monthly block of hours; 'Blocks start at $12 per month for 60 hours.' AI Notetaker is sold as a standalone add-on on any plan and is included in Everything AI. ClickUp says AI Notetaker is in early access and its pricing may evolve.",
-          "source": "https://help.clickup.com/hc/en-us/articles/40085008147863-Which-features-are-included-with-the-Brain-AI-add-ons"
         }
       ],
       "usage": [
@@ -1290,7 +1282,7 @@
       "unverified": [
         "Enterprise pricing is quote-only ('Contact sales').",
         "Business Plus, and the 'new set of plans that include more ClickUp AI' that ClickUp's help center says some Workspaces see, are priced only inside the app's upgrade flow; their prices are not on the public pricing page and were not captured.",
-        "Prices of the Automation Actions add-on (Business Plus and Enterprise only), the standalone AI Talk to Text add-on and ClickUp Assist (live 1:1 training) are shown only in a Workspace's billing page or not at all on the pages we captured. Whether the standalone AI Notetaker add-on has a fee beyond its hour blocks is not stated.",
+        "Prices of the Automation Actions add-on (Business Plus and Enterprise only), the standalone AI Talk to Text add-on and ClickUp Assist (live 1:1 training) are shown only in a Workspace's billing page or not at all on the pages we captured. The price of extra AI Notetaker hours is no longer published: ClickUp's add-on help article, re-read on 16 November 2026, still says AI Notetaker includes 20 free hours and more are bought as a monthly block of hours, but no longer gives a block price or size, and whether the standalone AI Notetaker add-on has any other fee is not stated.",
         "Nonprofit, academic and startup discount amounts are not published.",
         "ClickUp's 'Upgrade your plan' help article says Free Forever Workspaces with more than 100 MB of data must upgrade, while the pricing page, the feature list and the 'Workspace storage limits' article say 60MB; this record uses 60MB.",
         "Prices were read from a US locale; we did not test whether checkout shows different prices when accessed from other countries.",
@@ -1400,7 +1392,7 @@
         {
           "url": "https://help.clickup.com/hc/en-us/articles/40085008147863-Which-features-are-included-with-the-Brain-AI-add-ons",
           "label": "ClickUp Help Center: Which features are included with the Brain AI add-ons?",
-          "checkedOn": "2026-09-26"
+          "checkedOn": "2026-11-16"
         },
         {
           "url": "https://help.clickup.com/hc/en-us/articles/37837088720151-How-are-AI-Credits-consumed",
